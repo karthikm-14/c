@@ -1,7 +1,4 @@
 $(function(){
-    // Add footer 
-    $("#footer").load("../../footer.html");
-
     // active page
     $('.nav-item .mav-link').removeClass('active')
     setTimeout(() => {
