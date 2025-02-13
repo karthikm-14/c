@@ -1,0 +1,182 @@
+.top-slider .slider-images {
+    position: relative;
+    min-height: 300px;
+}
+.top-slider .slider-images .slider-img-1 {
+    width: 100%;
+}
+.top-slider .slider-images .slider-text {
+    position: absolute;
+    top: calc(50% - 112px);
+    left: 115px;
+    max-width: 100%;
+    z-index: 1;
+}
+.top-slider .slider-text {
+    position: relative;
+}
+.top-slider .slider-text .hidden-text {
+    font-family: "Black";
+    font-size: 70px;
+    line-height: 75px;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    width: max-content;
+    top: 35px;
+    z-index: -1;
+    left: 135px;
+    visibility: hidden;
+}
+.top-slider:hover .slider-text .hidden-text {
+    left: 100%;
+    visibility: visible;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+marquee {
+    background-color: #3AA8CC;
+}
+.march-may {
+    max-height: 580px;
+    background-color: #000;
+    position: relative;
+}
+.march-may-right img {
+    max-width: 100%
+}
+.march-may-text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-family: "Bold";
+    line-height: 94.5%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-flow: column;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+} 
+.march-may-text .march-may-text-block {
+    padding-left: 155px;
+    width: 70%;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.march-may-text .month {
+    font-size: 48px;
+    color: #fff;
+    line-height: 94.5%;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.march-may-text h2 {
+    color: #F29DAA;
+    font-size: 95px;
+    line-height: 94.5%;
+    margin-top: 20px;
+    -webkit-transition: font-size 500ms ease-in-out;
+    -moz-transition: font-size 500ms ease-in-out;
+    -o-transition: font-size 500ms ease-in-out;
+    transition: font-size 500ms ease-in-out;
+}
+.march-may:hover .march-may-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.march-may:hover .march-may-text .month {
+    font-size: 57px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.march-may:hover .march-may-text .march-may-text-block {
+    padding-left: 155px;
+    width: 80%;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+}
+.march-may:hover .march-may-text .march-may-text-block h2 {
+    font-size: 105px;
+    -webkit-transition: font-size 500ms ease-in-out;
+    -moz-transition: font-size 500ms ease-in-out;
+    -o-transition: font-size 500ms ease-in-out;
+    transition: font-size 500ms ease-in-out;
+}
+.season-in-spotlight-info {
+    background-color: #3AA8CC;
+}
+.season-in-spotlight-info .description {
+    padding: 100px;
+    color: #fff;
+}
+.season-in-spotlight-info .description h3 {
+    font-family: "ExtraBold";
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+.season-in-spotlight-info .description h3:hover {
+    color: #233D4D;
+}
+.season-in-spotlight-info .description p {
+    font-size: 33px;
+    line-height: 100%;
+    margin-top: 40px;
+}
+/* Gifts */
+.gifts .gift-details > div {
+    position: relative;
+    scale: 1;
+    -webkit-transition: scale 500ms ease-in-out;
+    -moz-transition: scale 500ms ease-in-out;
+    -o-transition: scale 500ms ease-in-out;
+    transition: scale 500ms ease-in-out;
+}
+.gifts .gift-details span {
+    font-family: "Bold";
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    line-height: 100%;
+    width: 75%;
+}
+.gifts .gift-details {
+    overflow: hidden;
+}
+.gifts .gift-details > div:hover {
+    scale: 1.02;
+    overflow: hidden;
+    -webkit-transition: scale 500ms ease-in-out;
+    -moz-transition: scale 500ms ease-in-out;
+    -o-transition: scale 500ms ease-in-out;
+    transition: scale 500ms ease-in-out;
+}
+.gifts .gift-details span.bottom-left {
+    bottom: 15px;
+    left: 15px;
+}
+.gifts .gift-details span.top-right {
+    top: 15px;
+    right: 15px;
+    text-align: right;
+}
+.gifts .gift-details span.top-left {
+    top: 15px;
+    left: 15px;
+}
