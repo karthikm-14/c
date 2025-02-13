@@ -1,6 +1,9 @@
 .top-slider .slider-images {
     position: relative;
-    min-height: 300px;
+    background: url("/images/season-in-spotlight/slider.jpg");
+    background-size: cover;
+    height: calc(100vh - 205px);
+    background-position: center;
 }
 .top-slider .slider-images .slider-img-1 {
     width: 100%;
@@ -8,7 +11,7 @@
 .top-slider .slider-images .slider-text {
     position: absolute;
     top: calc(50% - 112px);
-    left: 115px;
+    left: -45px;
     max-width: 100%;
     z-index: 1;
 }
@@ -26,13 +29,13 @@
     top: 35px;
     z-index: -1;
     left: 135px;
-    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
 }
 .top-slider:hover .slider-text .hidden-text {
     left: 100%;
-    visibility: visible;
-    animation: fadeInLeft;
-    animation-duration: 1s;
+    opacity: 1;
+    transition: all 500ms ease-in;
 }
 marquee {
     background-color: #3AA8CC;
@@ -42,8 +45,13 @@ marquee {
     background-color: #000;
     position: relative;
 }
+.march-may-right {
+    overflow: hidden;
+}
 .march-may-right img {
-    max-width: 100%
+    max-width: 100%;
+    scale: 1;
+    transition: all 500ms ease-in-out;
 }
 .march-may-text {
     position: absolute;
@@ -55,26 +63,16 @@ marquee {
     justify-content: center;
     height: 100%;
     flex-flow: column;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 } 
 .march-may-text .march-may-text-block {
-    padding-left: 155px;
     width: 70%;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
 .march-may-text .month {
     font-size: 48px;
     color: #fff;
     line-height: 94.5%;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
 .march-may-text h2 {
@@ -82,46 +80,34 @@ marquee {
     font-size: 95px;
     line-height: 94.5%;
     margin-top: 20px;
-    -webkit-transition: font-size 500ms ease-in-out;
-    -moz-transition: font-size 500ms ease-in-out;
-    -o-transition: font-size 500ms ease-in-out;
     transition: font-size 500ms ease-in-out;
+}
+.march-may:hover .march-may-right img {
+    scale: 1.1;
+    transition: all 500ms ease-in-out;
 }
 .march-may:hover .march-may-text {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
 .march-may:hover .march-may-text .month {
     font-size: 57px;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
 .march-may:hover .march-may-text .march-may-text-block {
-    padding-left: 155px;
     width: 80%;
-    -webkit-transition: width 500ms ease-in-out;
-    -moz-transition: width 500ms ease-in-out;
-    -o-transition: width 500ms ease-in-out;
     transition: width 500ms ease-in-out;
 }
 .march-may:hover .march-may-text .march-may-text-block h2 {
     font-size: 105px;
-    -webkit-transition: font-size 500ms ease-in-out;
-    -moz-transition: font-size 500ms ease-in-out;
-    -o-transition: font-size 500ms ease-in-out;
     transition: font-size 500ms ease-in-out;
 }
 .season-in-spotlight-info {
     background-color: #3AA8CC;
 }
 .season-in-spotlight-info .description {
-    padding: 100px;
+    padding: 100px 50px;
     color: #fff;
 }
 .season-in-spotlight-info .description h3 {
@@ -142,10 +128,12 @@ marquee {
 .gifts .gift-details > div {
     position: relative;
     scale: 1;
-    -webkit-transition: scale 500ms ease-in-out;
-    -moz-transition: scale 500ms ease-in-out;
-    -o-transition: scale 500ms ease-in-out;
-    transition: scale 500ms ease-in-out;
+    transition: scale 200ms ease-in-out;
+}
+.gifts .gift-details > div:hover {
+    scale: 1.05;
+    overflow: hidden;
+    transition: scale 200ms ease-in-out;
 }
 .gifts .gift-details span {
     font-family: "Bold";
@@ -159,14 +147,6 @@ marquee {
 .gifts .gift-details {
     overflow: hidden;
 }
-.gifts .gift-details > div:hover {
-    scale: 1.02;
-    overflow: hidden;
-    -webkit-transition: scale 500ms ease-in-out;
-    -moz-transition: scale 500ms ease-in-out;
-    -o-transition: scale 500ms ease-in-out;
-    transition: scale 500ms ease-in-out;
-}
 .gifts .gift-details span.bottom-left {
     bottom: 15px;
     left: 15px;
@@ -179,4 +159,148 @@ marquee {
 .gifts .gift-details span.top-left {
     top: 15px;
     left: 15px;
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .top-slider .slider-images {
+        background: url(/images/season-in-spotlight/slider-mobile.jpg);
+        background-size: cover;
+        height: calc(100vh - 143px);
+        background-position: center;
+    }
+    .top-slider .slider-images .slider-img-2 {
+        width: 400px;
+        left: -35px;
+        position: relative;
+    }
+    .top-slider .slider-images .slider-text {
+        left: auto;
+    }
+    .top-slider .slider-text .hidden-text {
+        font-size: 35px;
+        line-height: 33px;
+        top: 50px;
+        z-index: -1;
+        left: auto;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+    }
+    .top-slider:hover .slider-text .hidden-text {
+        left: auto;
+        top: 140px;
+        opacity: 1;
+        transition: all 500ms ease-in;
+    }
+    /* march may */
+    .march-may-text .month {
+        font-size: 22px;
+        line-height: 94%;
+    }
+    .march-may-text .month img {
+        width: 22px;
+    }
+    .march-may-text h2 {
+        font-size: 37px;
+        line-height: 94%;
+    }
+    .march-may .march-may-text {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .march-may:hover .march-may-text .month {
+        font-size: 28px;
+    }
+    .march-may:hover .march-may-text .march-may-text-block h2 {
+        font-size: 43px;
+    }
+    /* 3 column */
+    .season-in-spotlight-info {
+        padding: 25px 0 !important;
+    }
+    .season-in-spotlight-info .description {
+        padding: 20px 0;
+    }
+    .season-in-spotlight-info .description h3 {
+        font-size: 25px;
+        line-height: 88%;
+    }
+    .season-in-spotlight-info .description p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 15px;
+    }
+    .season-in-spotlight-info .col-12 {
+        padding: 0;
+    }
+    /* gifts */
+    .gifts .gift-details span {
+        font-size: 26px;
+        line-height: 130%;
+    }
+}
+
+ /* Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 992px) and (max-width: 1399.98px) { 
+    .top-slider .slider-images .slider-text {
+        top: 35%;
+        left: -40px;
+    }
+    .top-slider .slider-images .slider-text .slider-img-2 {
+        width: 75%;
+    }   
+    .top-slider .slider-text .hidden-text {
+        font-size: 52px;
+        line-height: 50px;
+        top: 32px;
+    }
+    .top-slider:hover .slider-text .hidden-text {
+        left: 78%;
+    }
+    /* march may month */
+    .march-may-text .month {
+        font-size: 38px;
+    }
+    .march-may-text .month img {
+        width: 40px;
+    }
+    .march-may-text h2 {
+        font-size: 55px;
+    }
+    .march-may:hover .march-may-text .month {
+        font-size: 47px;
+    }
+    .march-may:hover .march-may-text .march-may-text-block h2 {
+        font-size: 65px;
+    }
+    /* 3 column */
+    .season-in-spotlight-info .description {
+        padding: 50px 0;
+    }
+    .season-in-spotlight-info .description h3 {
+        font-size: 40px;
+    }
+    .season-in-spotlight-info .description p {
+        font-size: 24px;
+    }
+    /* gifts */
+    .gifts .gift-details span {
+        font-size: 30px;
+    }
+}
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+    .top-slider .slider-images .slider-img-2 {
+        width: 100%;
+        left: -23px;
+        position: relative;
+    }
+    .top-slider:hover .slider-text .hidden-text {
+        top: 100px;
+        transition: all 500ms ease-in;
+    }
+    .top-slider .slider-images .slider-text {
+        top: calc(50% - 103px);
+    }
 }

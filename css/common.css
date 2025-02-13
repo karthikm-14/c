@@ -220,6 +220,17 @@ marquee {
         height: 63px;
         padding: 11px;
     }
+    #footer > div {
+        height: 220px;
+    }
+    .nut .nut-border {
+        width: 39px;
+        height: 11px;
+        top: 30px;
+    }
+    .nut img {
+        height: 27px;
+    }
 }
 
 /* Apply styles starting from medium devices and up to extra large devices */
