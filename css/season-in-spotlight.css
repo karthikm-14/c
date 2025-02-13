@@ -1,6 +1,6 @@
 .top-slider .slider-images {
     position: relative;
-    background: url("/images/season-in-spotlight/slider.jpg");
+    background: url("../images/season-in-spotlight/slider.jpg");
     background-size: cover;
     height: calc(100vh - 205px);
     background-position: center;
@@ -165,7 +165,7 @@ marquee {
 /* applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .top-slider .slider-images {
-        background: url(/images/season-in-spotlight/slider-mobile.jpg);
+        background: url(../images/season-in-spotlight/slider-mobile.jpg);
         background-size: cover;
         height: calc(100vh - 143px);
         background-position: center;

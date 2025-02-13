@@ -26,7 +26,7 @@
     top: 0;
 }
 .slider-images .slider-image-1 {
-    background: url(/images/home/slider1.jpg);
+    background: url(../images/home/slider1.jpg);
     background-size: cover;
 }
 .top-slider .slider-images img {
