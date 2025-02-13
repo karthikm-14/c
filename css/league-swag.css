@@ -1,0 +1,219 @@
+/* top slider */
+.top-slider .slider-images {
+    width: 100%;
+    position: relative;
+    min-height: 300px;
+}
+.top-slider .slider-text {
+    position: absolute;
+    top: 40%;
+    left: 115px;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.top-slider .slider-text p {
+    margin: 0;
+    line-height: 94%;
+    color: #fff;
+}
+.top-slider .slider-text .text-2 {
+    font-family: "Bold";
+    color: #3AA7CB;
+}
+/* seasons */
+.league-swag-seasons {
+    padding: 100px 0;
+    background: #000;
+}
+.seasons-details-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.seasons-details-tabs .season-tab {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+.seasons-details-tabs .season-tab {
+    border: 5px solid #F29DAA;
+    height: 96px;
+}
+.seasons-details-tabs .season-tab.summer-tab {
+    border: 1px solid #30A56E;
+}
+.seasons-details-tabs .season-tab.fall-tab {
+    border: 1px solid #55281A;
+}
+.seasons-details-tabs .season-tab.winter-tab {
+    border: 1px solid #fff;
+}
+.seasons-details .seasons-details-col {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.seasons-details .seasons-details-col .base-league-content,
+.seasons-details .seasons-details-col .advanced-league-content,
+.seasons-details .seasons-details-col .pro-league-content,
+.seasons-details .seasons-details-col .premier-league-content {
+    padding: 30px 35px;
+}
+.seasons-details .seasons-details-col h6 {
+    font-family: "Bold";
+    font-size: 33px;
+    color: #3AA7CB;
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    margin: 90px auto 35px;
+}
+.seasons-details-col .season-detail-col {
+    position: relative;
+    width: 384px;
+    height: 580px;
+    background: rgba(217, 217, 217, 0.1);
+    color: #fff;
+}
+.seasons-details-col .top-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -108px;
+}
+.seasons-details-col .season-detail-col .cta-style {
+    background: #3AA7CB;
+    min-height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding: 4px;
+    line-height: 20px;
+    align-items: center;
+}
+.seasons-details-col .season-detail-col .plus-style {
+    font-size: 33px;
+    line-height: 20px;
+}
+.seasons-details-col .season-detail-col .season-points {
+    margin-top: 50px;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    left: 0;
+    bottom: 25px;
+}
+.seasons-details-col .season-detail-col .season-points div {
+    font-family: "Light";
+    font-size: 48px;
+    color: #fff;
+    line-height: 35px;
+}
+.seasons-details-col .season-detail-col .season-points div span {
+    font-size: 23px;
+}
+.seasons-details-col .season-detail-col .season-points .d2d,
+.seasons-details-col .season-detail-col .season-points .mdu {
+    font-family: "Bold";
+    font-size: 33px;
+    color: #3AA8CC;
+    margin-bottom: 19px;
+}
+.seasons-details-col .season-detail-col .season-points .mdu {
+    color: #F29DAA;
+}
+.seasons-details-col .season-detail-col:hover .season-detail-col-content {
+    height: 772px;
+    display: none;
+}
+.seasons-details-col .season-detail-col.base-league:hover {
+    background: url(/images/league-swag/base-league-hover.svg);
+    height: 772px;
+    margin-top: -189px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.seasons-details-col .season-detail-col.advanced-league:hover {
+    background: url(/images/league-swag/advanced-league-hover.svg);
+    height: 772px;
+    margin-top: -189px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.seasons-details-col .season-detail-col.pro-league:hover {
+    background: url(/images/league-swag/pro-league-hover.svg);
+    height: 772px;
+    margin-top: -189px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.seasons-details-col .season-detail-col.premier-league:hover {
+    background: url(/images/league-swag/premier-league-hover.svg);
+    height: 772px;
+    margin-top: -189px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* certificate */
+.earn-certificate {
+    padding: 100px 0 50px;
+    background-color: #000;
+}
+.earn-certificate h4,
+.earn-certificate p {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 28px;
+}
+.earn-certificate p {
+    font-family: "Black";
+    color: #3AA7CB;
+}
+.earn-certificate .earn-certificate-content {
+    justify-content: center;
+    gap: 20px;
+}
+/* visit now */
+.visit-now .visit-now-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3AA7CB;
+}
+.visit-now-left-content {
+    width: 50%;
+}
+.visit-now .visit-now-left h6 {
+    font-family: "ExtraBold";
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 58px;
+    text-shadow: 1px solid #fff;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+}
+.visit-now .visit-now-left h5 {
+    font-family: "ExtraBold";
+    font-size: 58px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.visit-now .visit-now-left h5 span {
+    color: #000;
+}
+.visit-now .visit-now-left p {
+    font-size: 33px;
+    line-height: 118%;
+}
+.visit-now .visit-now-left p span {
+    font-family: "SemiBold";
+}

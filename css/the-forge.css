@@ -1,0 +1,124 @@
+.top-slider .slider-images {
+    position: relative;
+    min-height: 300px;
+}
+.top-slider .slider-images .slider-img-1 {
+    filter: brightness(0.7);
+}
+.top-slider .slider-logo {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.top-slider .slider-logo h3 {
+    font-family: "Black";
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 90px;
+    line-height: 95%;
+    width: 67%;
+}
+marquee {
+    background-color: #3AA8CC;
+}
+/* new hires */
+.new-hires {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.new-hires h3 {
+    text-transform: uppercase;
+    font-family: "Black";
+    font-size: 60px;
+    width: 91%;
+    line-height: 91%;
+    margin: 20px 0;
+}
+.new-hires-block .new-hires-structured,
+.new-hires-block .new-hires-personal {
+    height: 457px;
+    font-family: "Bold";
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.new-hires-block .new-hires-structured {
+    background-color: #3AA7CB;
+}
+.new-hires-block .new-hires-personal {
+    background-color: #fff;
+    color: #000;
+}
+.new-hires-block .new-hire-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+.new-hires-block p {
+    width: 63%;
+    margin: 5% auto;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* d2d */
+.d2d-explained {
+    background-color: #000;
+    padding: 20px 100px 100px;
+}
+.container.d2d-explained-content {
+    margin: 50px 0;
+}
+.d2d-explained .d2d-explained-header {
+    padding: 50px 0 30px;
+    position: relative;
+}
+.d2d-explained .d2d-explained-header h2 {
+    font-family: "ExtraBold";
+    font-size: 60px;
+    color: #3AA8CC;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    padding: 0 20px;
+}
+.d2d-explained .d2d-explained-header .title-border-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 50px;
+    border-bottom: 1px solid #3AA7CB;
+}
+.d2d-explained .d2d-explained-header h2 .text-2 {
+    color: #F29DAA;
+}
+.d2d-explained .d2d-explained-content {
+    position: relative;
+}
+.d2d-explained .d2d-explained-content .d2d-end-container {
+    content: "";
+    position: absolute;
+    width: 157px;
+    height: 151px;
+    bottom: -1%;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+.d2d-explained .d2d-explained-content .d2d-end-container:hover .d2d-end {
+    display: none;
+}
+.d2d-explained .d2d-explained-content .d2d-end-container:hover .d2d-end-hover {
+    display: block;
+}
+.d2d-explained .d2d-explained-content .d2d-end-hover {
+    display: none;
+    background: #555;
+}

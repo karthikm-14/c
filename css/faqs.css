@@ -1,0 +1,161 @@
+.top-slider .slider-images {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    min-height: 300px;
+}
+.top-slider .slider-text {
+    position: absolute;
+    top: 40%;
+    left: 115px;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: "Thin";
+    color: #fff;
+}
+.top-slider .slider-text p {
+    margin: 0;
+    line-height: 100%;
+    color: #fff;
+}
+.top-slider .slider-text .text-2 {
+    font-family: "Bold";
+}
+/* Annual event */
+.league-spirit {
+    padding: 50px 0 80px;
+    background-color: #000;
+}
+.league-spirit .league-spirit-header {
+    padding: 50px 0 30px;
+    position: relative;
+}
+.league-spirit .league-spirit-header h2 {
+    font-family: "ExtraBold";
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    padding: 0 20px;
+    line-height: 100%;
+}
+.league-spirit .league-spirit-header .title-border-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 50px;
+    border-bottom: 1px solid #3AA7CB;
+}
+.league-spirit .league-spirit-header h2 .text-1 {
+    color: #fff;
+}
+.league-spirit .league-spirit-header h2 .text-2 {
+    color: #F29DAA;
+}
+.league-spirit .sub-heading {
+    font-size: 33px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    margin: 10px auto 50px;
+}
+.league-spirit.league-help .sub-heading {
+    font-size: 22px;
+    width: 55%;
+}
+.mail-to {
+    margin: 0 auto;
+    display: flex;
+    width: max-content;
+    background-color: #3AA7CB;
+    font-size: 21px;
+    color: #fff;
+}
+.mail-to:hover,
+.mail-to:active {
+    background-color: #3AA7CB;
+}
+/* questions */
+.questions-container {
+    padding: 80px 0 80px;
+    background-color: #000;
+    color: #fff;
+}
+.questions-container-block {
+    border: 1px solid #fff;
+}
+.questions-header-block {
+    display: flex;
+    padding: 20px 20px;
+}
+.questions-header-block h2 {
+    font-family: "Medium";
+    font-size: 22px;
+    line-height: 114%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.questions-header-block h2.active {
+    font-family: "Black";
+    color: #F29DAA;
+}
+.questions-header-block h2:hover {
+    color: #F29DAA;
+}
+.question-individual-section-container {
+    border-top: 1px solid #fff;
+    margin: 20px;
+    padding: 20px 0;
+}
+.question-individual-section-container .questions-list {
+    display: none;
+}
+.question-individual-section-container .questions-list.active {
+    display: block;
+    position: relative;
+}
+.question-individual-section-container ul {
+    padding: 0;
+    margin: 0;
+}
+.question-individual-section-container ul li {
+    list-style: none;
+}
+.questions-list .question {
+    cursor: pointer;
+}
+.questions-list .question,
+.questions-list .answer {
+    font-size: 22px;
+}
+.questions-list .answer {
+    display: none;
+}
+.questions-list .answer span {
+    top: 0;
+    padding: 25px 0;
+}
+.questions-list .answer.active {
+    display: block;
+}
+.questions-list .question.active {
+    color: #F29DAA;
+}
+.questions-list .question-and-answer {
+    display: flex;
+    align-items: start;
+    padding: 25px 0;
+}
+.questions-list .question-and-answer .arrow {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+
+}

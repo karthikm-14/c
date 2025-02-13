@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Black';
+    src: url('/fonts/Kanit/Kanit-Black.ttf');
+}
+@font-face {
+    font-family: 'BlackItalic';
+    src: url('/fonts/Kanit/Kanit-BlackItalic.ttf');
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('/fonts/Kanit/Kanit-Bold.ttf');
+}
+@font-face {
+    font-family: 'BoldItalic';
+    src: url('/fonts/Kanit/Kanit-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'ExtraBold';
+    src: url('/fonts/Kanit/Kanit-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'ExtraBoldItalic';
+    src: url('/fonts/Kanit/Kanit-ExtraBoldItalic.ttf');
+}
+@font-face {
+    font-family: 'ExtraLight';
+    src: url('/fonts/Kanit/Kanit-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'ExtraLightItalic';
+    src: url('/fonts/Kanit/Kanit-LightItalic.ttf');
+}
+@font-face {
+    font-family: 'Italic';
+    src: url('/fonts/Kanit/Kanit-Italic.ttf');
+}
+@font-face {
+    font-family: 'Light';
+    src: url('/fonts/Kanit/Kanit-Light.ttf');
+}
+@font-face {
+    font-family: 'LightItalic';
+    src: url('/fonts/Kanit/Kanit-LightItalic.ttf');
+}
+@font-face {
+    font-family: 'Medium';
+    src: url('/fonts/Kanit/Kanit-Medium.ttf');
+}
+@font-face {
+    font-family: 'MediumItalic';
+    src: url('/fonts/Kanit/Kanit-MediumItalic.ttf');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('/fonts/Kanit/Kanit-Regular.ttf');
+}
+@font-face {
+    font-family: 'SemiBold';
+    src: url('/fonts/Kanit/Kanit-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'SemiBoldItalic';
+    src: url('/fonts/Kanit/Kanit-SemiBoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Thin';
+    src: url('/fonts/Kanit/Kanit-Thin.ttf');
+}
+@font-face {
+    font-family: 'ThinItalic';
+    src: url('/fonts/Kanit/Kanit-ThinItalic.ttf');
+}
+body {
+    font-family: "Regular";
+    font-size: 2vw; /* 2% of the viewport width */
+}
+#header nav {
+    height: 112px;
+}
+#header nav, #footer{
+    background-color: #000 !important;
+}
+#header .nav-item .nav-link {
+    font-family: "Black";
+    font-size: 17px;
+    line-height: 135%;
+}
+#navbarSupportedContent .navbar-nav {
+    gap: 35px;
+}
+.navbar-brand {
+    width: 90px;
+    margin-right: 35px;
+    background: url(/images/header/logo.svg) no-repeat;
+    background-size: 100%;
+    height: 69px;
+    transition: all 200ms ease-in-out;
+}
+.navbar-brand:hover {
+    background: url("/images/header/logo-hover.svg") no-repeat;
+    background-size: 100%;
+    transition: all 200ms ease-in-out;
+}
+#footer > div {
+    padding-top: 150px;
+    height: 250px;
+    background: #000;
+}
+#footer {
+    height: 100px;
+}
+.nav-link {
+    color: #fff;
+}
+header#header {
+    margin-bottom: 110px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #3AA7CB;
+}
+.nut .nut-border {
+    width: 87px;
+    height: 25px;
+    display: flex;
+    margin-top: 8px;
+}
+.nut-white .nut-border {
+    border: 1px solid #fff;
+}
+.nut-cream .nut-border {
+    border: 1px solid #F29DAA;
+    background-color: #F29DAA;
+}
+.nut-blue .nut-border {
+    border: 1px solid #3AA8CC;
+    background-color: #3AA8CC;
+}
+.nut-green .nut-border {
+    border: 1px solid #30A56E;
+    background-color: #30A56E;
+}
+.nut-yellow .nut-border {
+    border: 1px solid #E5B52E;
+    background-color: #E5B52E;
+}
+.nut-brown .nut-border {
+    border: 1px solid #55281A;
+    background-color: #55281A;
+}
+.nut-orange .nut-border {
+    border: 1px solid #EC5D25;
+    background-color: #EC5D25;
+}
+.nut-white-2 .nut-border {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.nut {
+    position: relative;
+}
+.nut img {
+    position: absolute;
+    height: 59px;
+    position: absolute;
+    height: 59px;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.nut .nut-border {
+    width: 87px;
+    height: 25px;
+    display: block;
+    margin-top: 8px;
+    top: 60px;
+    position: relative;
+}
+
+marquee {
+    background-color: #3AA8CC;
+    font-family: "Black";
+    font-size: 66px;
+    line-height: 84.5%;
+    text-transform: uppercase;
+    text-shadow: 1px solid #fff;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    height: 95px;
+    padding: 20px;
+    display: block;
+}
+
+.mx-common {
+    margin: 0 180px;
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .mx-common {
+        margin: 0 50px;
+    }
+    .navbar-brand {
+        width: 48px;
+        height: 37px;
+    }
+    #header nav {
+        height: 80px;
+    }
+    header#header {
+        margin-bottom: 80px;
+    }
+    .top-slider .slider-images .overlay {
+        padding: 25px 0;
+    }
+    marquee {
+        font-size: 46px;
+        height: 63px;
+        padding: 11px;
+    }
+    #footer > div {
+        height: 220px;
+    }
+    .nut .nut-border {
+        width: 39px;
+        height: 11px;
+        top: 30px;
+    }
+    .nut img {
+        height: 27px;
+    }
+}
+
+/* Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .mx-common {
+        margin: 0 60px;
+    }
+    #header .nav-item .nav-link {
+        font-size: 12px;
+    }
+}

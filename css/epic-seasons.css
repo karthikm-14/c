@@ -1,0 +1,480 @@
+.top-slider .slider-images {
+    position: relative;
+    min-height: 300px;
+}
+.top-slider .slider-images .slider-img-1 {
+    filter: brightness(0.7);
+}
+.top-slider .slider-logo {
+    position: absolute;
+    padding: 100px;
+    left: 0;
+    top: 0;
+}
+.top-slider .slider-logo h3 {
+    font-family: "Black";
+    font-size: 111px;
+    color: #3AA7CB;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+marquee {
+    background-color: #3AA8CC;
+}
+.epic-seasons-carousel {
+    background-color: #000;
+    padding: 20px 0 100px;
+}
+.epic-seasons-carousel .epic-seasons-carousel-header {
+    padding: 50px 0 30px;
+    position: relative;
+}
+.epic-seasons-carousel .epic-seasons-carousel-header h2 {
+    font-family: "ExtraBold";
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    padding: 0 20px;
+}
+.epic-seasons-carousel .epic-seasons-carousel-header .title-border-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 50px;
+    border-bottom: 1px solid #3AA7CB;
+}
+.epic-seasons-carousel .epic-seasons-carousel-header h2 .text-2 {
+    color: #3AA7CB;
+}
+.epic-seasons-carousel .slick-dots li {
+    width: 10px;
+}
+.epic-seasons-carousel .slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+}
+.epic-seasons-carousel .slick-dots li.slick-active button:before {
+    content: '';
+    width: 15px;
+    height: auto;
+    border: 3px solid;
+    border-radius: 10px;
+    top: 7px;
+}
+.epic-seasons-carousel .slick-dots li:nth-child(1).slick-active button:before {
+    color: #F29DAA;
+}
+.epic-seasons-carousel .slick-dots li:nth-child(2).slick-active button:before {
+    color: #30A56E;
+}
+.epic-seasons-carousel .slick-dots li:nth-child(3).slick-active button:before {
+    color: #EC5D25;
+}
+.epic-seasons-carousel .slick-dots li:nth-child(4).slick-active button:before {
+    color: #83507E;
+}
+.seasonal-reset-boosters {
+    background: #233D4D;
+    color: #fff;
+}
+.seasonal-reset-boosters .reset,
+.seasonal-reset-boosters .boosters {
+    padding: 10% 15%;
+    height: 100%;
+}
+.seasonal-reset-boosters .reset h3,
+.seasonal-reset-boosters .boosters h3 {
+    font-family: "ExtraBold";
+    font-size: 50px;
+    color: #F29DAA;
+    text-transform: uppercase;
+}
+.seasonal-reset-boosters .reset p,
+.seasonal-reset-boosters .boosters p {
+    font-size: 33px;
+    line-height: 35px;
+    margin-top: 35px;
+    width: 80%;
+}
+.seasonal-reset-boosters .reset-img {
+    background-image: url("/images/epic-seasons/seasonal-reset.png");
+    display: block;
+    width: 53px;
+    height: 59px;
+}
+.seasonal-reset-boosters .boosters-img {
+    background-image: url("/images/epic-seasons/seasonal-boosters.png");
+    display: block;
+    width: 63px;
+    height: 63px;
+}
+.seasonal-reset-boosters:hover {
+    background-color: #F29DAA;
+}
+.seasonal-reset-boosters:hover .reset h3,
+.seasonal-reset-boosters:hover .boosters h3 {
+    color: #fff;
+}
+.seasonal-reset-boosters:hover .reset p,
+.seasonal-reset-boosters:hover .boosters p {
+    color: #233D4D;
+}
+.seasonal-reset-boosters:hover .reset-img {
+    background-image: url("/images/epic-seasons/seasonal-reset-hover.png");
+}
+.seasonal-reset-boosters:hover .boosters-img {
+    background-image: url("/images/epic-seasons/seasonal-boosters-hover.png");
+}
+.seasonal-awards {
+    background-image: url("/images/epic-seasons/seasonal-awards-bg.jpg");
+    display: block;
+    width: 100%;
+    height: 894px;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.seasonal-awards .seasonal-awards-header h3 {
+    font-family: "ExtraBold";
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.seasonal-awards .seasonal-awards-header p {
+    font-size: 28px;
+}
+.seasonal-awards .seasonal-awards-content .highest-season-points{
+    background-image: url("/images/epic-seasons/highest-season-points.png");
+    width: 64px;
+    height: 66px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .highest-season-points{
+    background-image: url("/images/epic-seasons/highest-season-points-hover.png");
+    width: 64px;
+    height: 66px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .consistent-team{
+    background-image: url("/images/epic-seasons/consistent-team.png");
+    width: 80px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .consistent-team{
+    background-image: url("/images/epic-seasons/consistent-team-hover.png");
+    width: 80px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .best-closer{
+    background-image: url("/images/epic-seasons/best-closer.png");
+    width: 73px;
+    height: 73px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .best-closer{
+    background-image: url("/images/epic-seasons/best-closer-hover.png");
+    width: 73px;
+    height: 73px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .valuable-recruiter{
+    background-image: url("/images/epic-seasons/valuable-recruiter.png");
+    width: 83px;
+    height: 79px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .valuable-recruiter{
+    background-image: url("/images/epic-seasons/valuable-recruiter-hover.png");
+    width: 83px;
+    height: 79px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .predictor{
+    background-image: url("/images/epic-seasons/predictor.png");
+    width: 73px;
+    height: 76px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .predictor{
+    background-image: url("/images/epic-seasons/predictor-hover.png");
+    width: 73px;
+    height: 76px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .personal-bests{
+    background-image: url("/images/epic-seasons/personal-bests.png");
+    width: 65px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .personal-bests{
+    background-image: url("/images/epic-seasons/personal-bests-hover.png");
+    width: 65px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .records-broken{
+    background-image: url("/images/epic-seasons/records-broken.png");
+    width: 59px;
+    height: 67px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .records-broken{
+    background-image: url("/images/epic-seasons/records-broken-hover.png");
+    width: 59px;
+    height: 67px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content .activity-level{
+    background-image: url("/images/epic-seasons/activity-level.png");
+    width: 56px;
+    height: 77px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards:hover .activity-level{
+    background-image: url("/images/epic-seasons/activity-level-hover.png");
+    width: 56px;
+    height: 77px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.seasonal-awards .seasonal-awards-content p {
+    font-size: 33px;
+    line-height: 28px;
+    width: 80%;
+    margin: 30px auto;
+}
+.points-system {
+    background-color: #3AA8CC;
+}
+.points-system .points-system-header {
+    color: #fff;
+}
+.points-system .points-system-content {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10% 7%;
+    height: 443px;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}  
+.pro-tip-container .pro-tip-left .pro-tip-img {
+    height: 50%;
+    animation: rotate 20s infinite linear;
+}
+.pro-tip-container .pro-tip-left {
+    position: relative;
+    background: url("/images/epic-seasons/bulb.svg") no-repeat;
+    background-position: center;
+}
+.to-permier-container {
+    background-color: #000;
+    color: #fff;
+}
+/* leagues explained */
+.leagues-explained {
+    background-color: #fff;
+    padding: 20px 0 100px;
+}
+.container.leagues-explained-content {
+    margin: 50px 0;
+}
+.leagues-explained .leagues-explained-header {
+    padding: 50px 0 30px;
+    position: relative;
+}
+.leagues-explained .leagues-explained-header h2 {
+    font-family: "ExtraBold";
+    font-size: 60px;
+    color: #3AA8CC;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    padding: 0 20px;
+}
+.leagues-explained .leagues-explained-header .title-border-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 50px;
+    border-bottom: 1px solid #3AA7CB;
+}
+.leagues-explained .leagues-explained-header h2 .text-2 {
+    color: #233D4D;
+}
+.leagues-explained-content p {
+    margin: 50px auto;
+    width: 72%;
+}
+.leagues-explained-content .leagues-explained-block:not(:last-child) {
+    border-right: 1px solid #000;
+}
+.leagues-explained-block .d2d,
+.leagues-explained-block .mdu {
+    font-family: "Bold";
+    font-size: 33px;
+    color: #3AA8CC;
+}
+.leagues-explained-block .mdu {
+    color: #F29DAA;
+}
+.leagues-explained-block .points {
+    font-family: "Light";
+    font-size: 56px;
+    color: #000;
+}
+.leagues-explained-block .points span {
+    font-size: 23px;
+}
+/* League points system */
+.points-system {
+    padding: 50px 0;
+}
+.points-system .points-system-header h3 {
+    text-transform: uppercase;
+    font-family: "Black";
+    font-size: 60px;
+    color: #fff;
+}
+.points-system .points-system-header h3 span {
+    color: #233D4D;
+}
+.points-system .points-system-header p {
+    font-size: 33px;
+    line-height: 33px;
+    width: 85%;
+    margin: 20px auto 40px;
+}
+.points-system .points-system-content h4 {
+    font-family: "Black";
+    font-size: 32px;
+    text-transform: uppercase;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.points-system .points-system-content ul li {
+    font-size: 22px;
+    line-height: 43px;
+}
+/* protip */
+.pro-tip-container {
+    padding: 50px 0;
+}
+.pro-tip-container .pro-tip-right h2 {
+    font-family: "Black";
+    font-size: 56px;
+    text-transform: uppercase;
+}
+.pro-tip-container .pro-tip-right .count {
+    font-family: "Black";
+    font-size: 70px;
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: transparent;
+}
+.pro-tip-container .pro-tip-right h6 {
+    font-family: "Black";
+    font-size: 33px;
+}
+.pro-tip-container .pro-tip-right p {
+    font-size: 33px;
+    line-height: 33px;
+}
+.pro-tip-container .pro-tip-right-content > div {
+    margin-top: 20px;
+}
+/* Choose your path */
+.to-permier-container {
+    padding: 100px 0;
+}
+.to-permier-container .to-permier-header h3 {
+    color: #fff;
+    font-family: "Bold";
+    font-size: 56px;
+    text-transform: uppercase;
+}
+.to-permier-container .to-permier-header h3 span{
+    color: #3AA7CB
+}
+.to-permier-container .to-permier-header p {
+    font-size: 28px;
+    margin: 40px 0;
+    line-height: 33px;
+}
+.to-permier-container .to-permier-block {
+    margin-top: 50px;
+}
+.to-permier-container .to-permier-block .to-permier-content h4 {
+    color: #F29DAA;
+    font-family: "Bold";
+    font-size: 56px;
+    text-transform: uppercase;
+    width: 50%;
+    line-height: 100%;
+}
+.to-permier-container .to-permier-block .to-permier-content p {
+    font-size: 22px;
+    width: 90%;
+}
+/* Area managers */
+.area-managers {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.area-managers .line-1,
+.area-managers .line-3 {
+    font-size: 33px;
+    margin: 0;
+}
+.area-managers .line-2 {
+    font-family: "Bold";
+    font-size: 50px;
+    color: #3AA8CC;
+    text-transform: uppercase;
+}
+.area-managers .line-3 {
+    text-transform: uppercase;
+    margin: 0;
+}
