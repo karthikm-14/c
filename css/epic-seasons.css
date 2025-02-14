@@ -1,32 +1,35 @@
 .top-slider .slider-images {
     position: relative;
-    min-height: 300px;
-}
-.top-slider .slider-images .slider-img-1 {
+    background: url("../images/epic-seasons/slider1.jpg");
+    background-size: cover;
+    height: calc(100vh - 205px);
+    background-position: center;
     filter: brightness(0.7);
+    display: flex;
+    align-items: center;
 }
 .top-slider .slider-logo {
-    position: absolute;
-    padding: 100px;
-    left: 0;
-    top: 0;
+    position: relative;
+    left: -45px;
 }
 .top-slider .slider-logo h3 {
     font-family: "Black";
     font-size: 111px;
     color: #3AA7CB;
     text-transform: uppercase;
-    padding-left: 30px;
+    padding-left: 45px;
+    line-height: 94%;
+    margin-bottom: 0;
 }
 marquee {
     background-color: #3AA8CC;
 }
 .epic-seasons-carousel {
     background-color: #000;
-    padding: 20px 0 100px;
+    padding: 100px 0;
+    overflow-x: hidden;
 }
 .epic-seasons-carousel .epic-seasons-carousel-header {
-    padding: 50px 0 30px;
     position: relative;
 }
 .epic-seasons-carousel .epic-seasons-carousel-header h2 {
@@ -42,13 +45,49 @@ marquee {
     z-index: 1;
     position: relative;
     padding: 0 20px;
+    margin-bottom: 20px;
+}
+.epic-seasons-carousel-slider .slick-list  {
+    overflow: visible;
+}
+.epic-seasons-carousel-slider .slick-track .slick-slide {
+    padding: 10px;
+    position: relative;
+}
+.epic-seasons-carousel-slider .slick-track .slick-slide img {
+    padding: 4px;
+    width: 100%;
+}
+.epic-seasons-carousel-slider .slick-track .slick-slide:nth-child(1) img {
+    border: 5px solid #3AA7CB;
+}
+
+.epic-seasons-carousel-slider .slick-track .slick-slide:nth-child(1):before {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: 45px;
+    background-image: url(../images/epic-seasons/check.svg);
+    width: 54px;
+    height: 54px;
+    background-size: 100%;
+}
+.epic-seasons-carousel-slider .slick-track .slick-slide:not(.slick-current):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.7;
 }
 .epic-seasons-carousel .epic-seasons-carousel-header .title-border-bottom {
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
-    bottom: 50px;
+    bottom: 50%;
     border-bottom: 1px solid #3AA7CB;
 }
 .epic-seasons-carousel .epic-seasons-carousel-header h2 .text-2 {
@@ -87,7 +126,6 @@ marquee {
 }
 .seasonal-reset-boosters .reset,
 .seasonal-reset-boosters .boosters {
-    padding: 10% 15%;
     height: 100%;
 }
 .seasonal-reset-boosters .reset h3,
@@ -107,44 +145,43 @@ marquee {
 .seasonal-reset-boosters .reset-img {
     background-image: url("/images/epic-seasons/seasonal-reset.png");
     display: block;
-    width: 53px;
+    width: 57px;
     height: 59px;
+    background-repeat: no-repeat;
 }
 .seasonal-reset-boosters .boosters-img {
     background-image: url("/images/epic-seasons/seasonal-boosters.png");
     display: block;
     width: 63px;
     height: 63px;
+    background-repeat: no-repeat;
 }
-.seasonal-reset-boosters:hover {
+.seasonal-reset-boosters .reset:hover,
+.seasonal-reset-boosters .boosters:hover {
     background-color: #F29DAA;
 }
-.seasonal-reset-boosters:hover .reset h3,
-.seasonal-reset-boosters:hover .boosters h3 {
+.seasonal-reset-boosters .reset:hover h3,
+.seasonal-reset-boosters .boosters:hover h3 {
     color: #fff;
 }
-.seasonal-reset-boosters:hover .reset p,
-.seasonal-reset-boosters:hover .boosters p {
+.seasonal-reset-boosters .reset:hover p,
+.seasonal-reset-boosters .boosters:hover p {
     color: #233D4D;
 }
-.seasonal-reset-boosters:hover .reset-img {
+.seasonal-reset-boosters .reset:hover .reset-img {
     background-image: url("/images/epic-seasons/seasonal-reset-hover.png");
 }
-.seasonal-reset-boosters:hover .boosters-img {
+.seasonal-reset-boosters .boosters:hover .boosters-img {
     background-image: url("/images/epic-seasons/seasonal-boosters-hover.png");
 }
 .seasonal-awards {
     background-image: url("/images/epic-seasons/seasonal-awards-bg.jpg");
     display: block;
     width: 100%;
-    height: 894px;
+    padding: 120px 0;
     background-size: cover;
     color: #fff;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
 }
 .seasonal-awards .seasonal-awards-header h3 {
     font-family: "ExtraBold";
@@ -268,7 +305,7 @@ marquee {
 }
 .seasonal-awards .seasonal-awards-content p {
     font-size: 33px;
-    line-height: 28px;
+    line-height: 33px;
     width: 80%;
     margin: 30px auto;
 }
@@ -280,8 +317,15 @@ marquee {
 }
 .points-system .points-system-content {
     background: rgba(255, 255, 255, 0.2);
-    padding: 10% 7%;
-    height: 443px;
+    padding: 7% 10%;
+    height: 100%;
+}
+.points-system .points-system-content:hover {
+    background: #fff;
+    color: #F29DAA;
+}
+.points-system .points-system-content:hover ul li {
+    color: #000;
 }
 @keyframes rotate {
     0% {
@@ -310,13 +354,13 @@ marquee {
 /* leagues explained */
 .leagues-explained {
     background-color: #fff;
-    padding: 20px 0 100px;
+    padding: 120px 0;
 }
 .container.leagues-explained-content {
     margin: 50px 0;
 }
 .leagues-explained .leagues-explained-header {
-    padding: 50px 0 30px;
+    margin-bottom: 90px;
     position: relative;
 }
 .leagues-explained .leagues-explained-header h2 {
@@ -338,7 +382,7 @@ marquee {
     left: 0;
     right: 0;
     width: 100%;
-    bottom: 50px;
+    bottom: 50%;
     border-bottom: 1px solid #3AA7CB;
 }
 .leagues-explained .leagues-explained-header h2 .text-2 {
@@ -346,7 +390,10 @@ marquee {
 }
 .leagues-explained-content p {
     margin: 50px auto;
-    width: 72%;
+    width: 90%;
+    font-size: 22px;
+    line-height: 130%;
+    min-height: 86px;
 }
 .leagues-explained-content .leagues-explained-block:not(:last-child) {
     border-right: 1px solid #000;
@@ -362,7 +409,7 @@ marquee {
 }
 .leagues-explained-block .points {
     font-family: "Light";
-    font-size: 56px;
+    font-size:45px;
     color: #000;
 }
 .leagues-explained-block .points span {
@@ -370,7 +417,7 @@ marquee {
 }
 /* League points system */
 .points-system {
-    padding: 50px 0;
+    padding: 110px 0 73px;
 }
 .points-system .points-system-header h3 {
     text-transform: uppercase;
@@ -396,16 +443,22 @@ marquee {
 }
 .points-system .points-system-content ul li {
     font-size: 22px;
-    line-height: 43px;
+    line-height: 28px;
+    margin-bottom: 10px;
 }
 /* protip */
 .pro-tip-container {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .pro-tip-container .pro-tip-right h2 {
     font-family: "Black";
     font-size: 56px;
     text-transform: uppercase;
+    line-height: 106%;
+    color: #3AA7CB;
+}
+.pro-tip-container .pro-tip-right h2 span{
+    color: #000;
 }
 .pro-tip-container .pro-tip-right .count {
     font-family: "Black";
@@ -416,6 +469,7 @@ marquee {
 .pro-tip-container .pro-tip-right h6 {
     font-family: "Black";
     font-size: 33px;
+    line-height: 43px;
 }
 .pro-tip-container .pro-tip-right p {
     font-size: 33px;
@@ -439,8 +493,9 @@ marquee {
 }
 .to-permier-container .to-permier-header p {
     font-size: 28px;
-    margin: 40px 0;
+    margin: 40px auto 50px;
     line-height: 33px;
+    width: 85%;
 }
 .to-permier-container .to-permier-block {
     margin-top: 50px;
@@ -452,10 +507,31 @@ marquee {
     text-transform: uppercase;
     width: 50%;
     line-height: 100%;
+    transition: all 0.2s ease-in-out;
 }
 .to-permier-container .to-permier-block .to-permier-content p {
     font-size: 22px;
     width: 90%;
+    position: relative;
+}
+.to-permier-container .to-permier-block .to-permier-content p:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.2s ease-in-out;
+}
+.to-permier-container .to-permier-block .to-permier-content:hover h4 {
+    width: 100%;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+}
+.to-permier-container .to-permier-block .to-permier-content:hover p:after {
+    height: 0;
+    transition: height 0.2s ease-in-out;
 }
 /* Area managers */
 .area-managers {
@@ -473,8 +549,333 @@ marquee {
     font-size: 50px;
     color: #3AA8CC;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 .area-managers .line-3 {
     text-transform: uppercase;
     margin: 0;
+}
+
+
+/* applies to small devices (landscape phones, less than 768px) */
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .top-slider .slider-images {
+        background-position: 80%;
+        height: calc(100vh - 143px);
+        background-repeat: no-repeat;
+    }
+    .top-slider .slider-images .slider-img-2 {
+        width: 200px;
+        left: 30px;
+    }
+    .top-slider .slider-logo {
+        left: -16px;
+    }
+    .top-slider .slider-logo h3 {
+        font-size: 55px;
+        padding-left: 20px;
+    }
+    .epic-seasons-carousel {
+        padding: 50px 0;
+    }
+    .epic-seasons-carousel .epic-seasons-carousel-header h2 {
+        font-size: 30px;
+        padding: 0 10px;
+    } 
+    .epic-seasons-carousel-slider .slick-track .slick-slide {
+        padding: 5px;
+    }
+    .epic-seasons-carousel-slider .slick-track .slick-slide:nth-child(1):before {
+        right: 5px;
+        top: 20px;
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .epic-seasons-carousel-slider .slick-track .slick-slide:nth-child(1) img {
+        border: 2px solid #3AA7CB;
+    }
+    .seasonal-reset-boosters .reset h3, .seasonal-reset-boosters .boosters h3 {
+        font-size: 24px;
+    }
+    .seasonal-reset-boosters .reset-img,
+    .seasonal-reset-boosters .boosters-img
+    {
+        background-size: 50%;
+    }
+    .seasonal-reset-boosters .reset p, 
+    .seasonal-reset-boosters .boosters p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .booster-container {
+        border-left: none !important;
+    }
+    .seasonal-awards {
+        padding: 60px 0;
+    }
+    .seasonal-awards .seasonal-awards-header h3 {
+        font-size: 28px;
+    }
+    .seasonal-awards .seasonal-awards-header p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .seasonal-awards .seasonal-awards-content .highest-season-points {
+        background-size: 80%;
+    }
+    .seasonal-awards-content .col-lg-3.col-6 {
+        margin-bottom: 45px;
+    }
+    .seasonal-awards .seasonal-awards-content p {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 10px auto 10px;
+        width: 100%;
+    }
+    .leagues-explained {
+        padding: 60px 0;
+    }
+    .leagues-explained .leagues-explained-header {
+        margin-bottom: 45px;
+    }
+    .leagues-explained .leagues-explained-header h2 {
+        font-size: 24px;
+        padding: 0 10px;
+    }   
+    .points-system {
+        padding: 60px 0 30px;
+    }
+    .points-system .points-system-header h3 {
+        font-size: 30px;
+    } 
+    .points-system .points-system-header p {
+        font-size: 18px;
+        line-height: 23px;
+        width: 100%;
+    }
+    .points-system .points-system-content h4 {
+        font-size: 24px;
+        width: 75%;
+    }
+    .points-system .points-system-content ul li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .pro-tip-container {
+        padding: 50px 0;
+    }
+    .pro-tip-container .pro-tip-left {
+        background-size: 15%;
+    }
+    .pro-tip-container .pro-tip-left .pro-tip-img {
+        width: 50%;
+        max-width: 250px;
+    }
+    .pro-tip-container .pro-tip-right h2 {
+        font-size: 28px;
+    }
+    .pro-tip-container .pro-tip-right .count {
+        font-size: 35px;
+    }
+    .pro-tip-container .pro-tip-right h6 {
+        font-size: 24px;
+        line-height: 43px;
+        margin-bottom: 0;
+    }
+    .pro-tip-container .pro-tip-right p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .to-permier-container {
+        padding: 50px 0;
+    }
+    .to-permier-container .to-permier-header h3 {
+        font-size: 28px;
+    }
+    .to-permier-container .to-permier-header p {
+        font-size: 16px;
+        margin: 20px auto 25px;
+        line-height: 28px;
+        width: 100%;
+    }
+    .to-permier-container .to-permier-block {
+        margin-top: 20px;
+    }
+    .to-permier-container .to-permier-block .to-permier-content {
+        margin-bottom: 20px;
+    }
+    .to-permier-container .to-permier-block .to-permier-content h4 {
+        font-size: 35px;
+    }
+    .to-permier-container .to-permier-block .to-permier-content:hover h4 {
+        font-size: 22px;
+    }
+    .to-permier-container .to-permier-block .to-permier-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .area-managers {
+        padding: 25px 0;
+    }
+    .area-managers .line-1, 
+    .area-managers .line-3 {
+        font-size: 17px;
+    }
+    .area-managers .line-2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+ /* Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 992px) and (max-width: 1399.98px) { 
+    .top-slider .slider-images {
+        background-position: right;
+    }
+    .top-slider .slider-images .slider-img-2 {
+        width: 75%;
+    }   
+    .top-slider .slider-logo {
+        left: -30px;
+    }
+    .top-slider .slider-logo h3 {
+        font-size: 80px;
+        padding-left: 30px;
+        line-height: 94%;
+    }
+    .epic-seasons-carousel {
+        padding: 60px 0;
+    }
+    .epic-seasons-carousel .epic-seasons-carousel-header h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .epic-seasons-carousel .epic-seasons-carousel-header .title-border-bottom {
+        bottom: 50%;
+    }
+    .seasonal-reset-boosters .reset h3,
+    .seasonal-reset-boosters .boosters h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .seasonal-reset-boosters .reset-img {
+        background-size: 80%;
+    }
+    .seasonal-reset-boosters .reset p,
+    .seasonal-reset-boosters .boosters p {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .seasonal-awards .seasonal-awards-header h3 {
+        font-size: 50px;
+    }
+    .seasonal-awards .seasonal-awards-header p {
+        font-size: 24px;
+    }
+    .seasonal-awards .seasonal-awards-content p {
+        font-size: 26px;
+        line-height: 28px;
+        margin: 20px auto;
+    }
+    .leagues-explained .leagues-explained-header h2 {
+        font-size: 50px;
+    }
+    .leagues-explained .leagues-explained-header {
+        margin-bottom: 50px;
+    }
+    .col-3.text-center.leagues-explained-block img {
+        width: 90%;
+        max-width: 216px;
+    }
+    .leagues-explained-content p {
+        width: 90%;
+        font-size: 18px;
+    }
+    .leagues-explained-block .points {
+        font-size: 32px;
+    }
+    .points-system .points-system-header h3 {
+        font-size: 50px;
+    }
+    .points-system .points-system-header p {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .points-system .points-system-content h4 {
+        width: 75%;
+    }
+    .points-system .points-system-content ul li {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .pro-tip-container .pro-tip-left .pro-tip-img {
+        width: 100%;
+    }
+    .pro-tip-container .pro-tip-right h2 {
+        font-size: 50px;
+    }
+    .pro-tip-container .pro-tip-right p {
+        font-size: 30px;
+    }
+    .to-permier-container .to-permier-block .to-permier-content h4 {
+        font-size: 46px;
+    }
+}
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+ @media (max-width: 767.98px) { 
+    .seasonal-reset-boosters .reset p, 
+    .seasonal-reset-boosters .boosters p {
+        width: 100%;
+    }
+    .seasonal-reset-boosters .reset-img,
+    .seasonal-reset-boosters .boosters-img
+    {
+        background-position: right top;
+    }
+    .leagues-explained-content .leagues-explained-block:not(:last-child) {
+        border-right: none;
+    }
+    .leagues-explained-content .slick-prev:before, 
+    .leagues-explained-content .slick-next:before {
+        color: #000;
+    }
+    .leagues-explained-content .slick-slide img {
+        display: inline;
+        width: 60%;
+        max-width: 200px;
+    }
+    .leagues-explained-content p {
+        margin: 20px auto 0px;
+        width: 70%;
+        font-size: 18px;
+    }
+    .leagues-explained-block .d2d, .leagues-explained-block .mdu {
+        font-size: 30px;
+    }
+    .leagues-explained-block .points {
+        font-size: 35px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .leagues-explained-block img {
+        width: 90%;
+    }
+    .leagues-explained-content p {
+        margin: 25px auto;
+        width: 100%;
+        font-size: 18px;
+        min-height: 117px;
+    }
+    .leagues-explained-block .d2d, 
+    .leagues-explained-block .mdu {
+        font-size: 25px;
+    }
+    .leagues-explained-block .points {
+        font-size: 24px;
+    }
+
 }

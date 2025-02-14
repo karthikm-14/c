@@ -195,12 +195,30 @@ marquee {
 .mx-common {
     margin: 0 180px;
 }
+.px-common {
+    padding: 0 180px;
+}
+.ps-common {
+    padding-left: 180px;
+}
+.pe-common {
+    padding-right: 180px;
+}
 
 /* applies to small devices (landscape phones, less than 768px) */
 /* applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .mx-common {
         margin: 0 50px;
+    }
+    .px-common {
+        padding: 0 50px;
+    }
+    .ps-common {
+        padding-left: 50px;
+    }
+    .pe-common {
+        padding-right: 50px;
     }
     .navbar-brand {
         width: 48px;
@@ -237,6 +255,15 @@ marquee {
 @media (min-width: 992px) and (max-width: 1399.98px) {
     .mx-common {
         margin: 0 60px;
+    }
+    .px-common {
+        padding: 0 60px;
+    }
+    .ps-common {
+        padding-left: 60px;
+    }
+    .pe-common {
+        padding-right: 60px;
     }
     #header .nav-item .nav-link {
         font-size: 12px;

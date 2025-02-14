@@ -7,27 +7,26 @@
     <link href="./libs/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./libs/aos-master/dist/aos.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/epic-seasons.css">
 </head>
 <body>
     <!-- Header -->
     <header id="header">
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid align-items-end px-5">
-                <a class="navbar-brand" href="./">
-                    <img src="./images/header/logo.svg" alt="Chipr" width="auto" height="85">
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+            <div class="container-fluid align-items-end px-lg-5 px-xs-5 bg-black">
+                <a class="navbar-brand" href="./"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase season" aria-current="page" href="./season-in-spotlight.html">Season in spotlight</a>
+                            <a class="nav-link text-uppercase season" href="./season-in-spotlight.html">Season in spotlight</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase epic" href="./epic-seasons.html">epic seasons</a>
+                            <a class="nav-link text-uppercase epic" aria-current="page" href="./epic-seasons.html">epic seasons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase champions" href="./champions-club.html">champions club</a>
@@ -50,9 +49,7 @@
     <!-- section hero -->
     <section class="top-slider">
         <div class="slider-images">
-            <img alt="Season in spotlight" class="slider-img-1 w-100" src="./images/epic-seasons/slider1.svg" />
-            <div class="overlay-black"></div>
-            <div class="slider-logo">
+            <div class="slider-logo mx-common">
                 <img alt="Building" class="slider-img-2" src="./images/epic-seasons/logo.png" />
                 <h3 class="change-text">compete.</h3>
             </div>
@@ -73,17 +70,24 @@
     </marquee>
     <!-- slick slider -->
     <div class="container-fluid epic-seasons-carousel">
-        <div class="container">
+        <div class="mx-common">
             <div class="epic-seasons-carousel-header">
                 <h2 class="text-center"><span class="text-1">season</span>&nbsp;<span class="text-2">themes</span></h2>
                 <div class="title-border-bottom"></div>
             </div>
-            <div class="row epic-seasons-carousel-slider">
-                <div class="carousel">
-                    <img src="./images/epic-seasons/carousel1.jpg" />
-                    <img src="./images/epic-seasons/carousel2.jpg" />
-                    <img src="./images/epic-seasons/carousel3.jpg" />
-                    <img src="./images/epic-seasons/carousel4.jpg" />
+            <div class="epic-seasons-carousel-slider">
+                <div class="carousel d-lg-block d-none">
+                    <div><img src="./images/epic-seasons/carousel1.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel2.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel3.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel4.jpg" /></div>
+                </div>
+                <!-- mobile -->
+                <div class="carousel d-lg-none">
+                    <div><img src="./images/epic-seasons/carousel1-mobile.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel2-mobile.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel3-mobile.jpg" /></div>
+                    <div><img src="./images/epic-seasons/carousel4-mobile.jpg" /></div>
                 </div>
             </div>
         </div>
@@ -92,19 +96,19 @@
     <div class="container-fluid seasonal-reset-boosters">
         <div class="row">
             <!-- firs column -->
-            <div class="col-6 p-0">
-                <div class="reset">
-                    <div class="d-flex justify-content-between align-items-center">
+            <div class="col-lg-6 col-12 p-0">
+                <div class="reset px-common pe-5 py-5">
+                    <div class="d-flex justify-content-between align-items-top gap-3">
                         <h3>Seasonal Reset</h3>
                         <span class="reset-img"></span>
                     </div>
-                    <p>While League Points reset each season, your achievements and league advancements within a season contribute to your overall standing and participation in the end-of-year Champions Club.</p>
+                    <p>While League Points reset each season, your achievements and league advancements carry forward, shaping your overall standing and boosting your shot at the Champions Club.</p>
                 </div>
             </div>
             <!-- second column -->
-            <div class="col-6 p-0">
-              <div class="boosters">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="col-lg-6 col-12 border-start border-secondary p-0 booster-container">
+              <div class="boosters px-common ps-5 py-5">
+                <div class="d-flex justify-content-between align-items-top">
                     <h3>boosters</h3>
                     <span class="boosters-img"></span>
                 </div>
@@ -114,84 +118,84 @@
         </div>
     </div>
     <!-- seasonal awards -->
-    <div class="container-fluid seasonal-awards">
-        <div class="seasonal-awards-header">
+    <div class="container-fluid seasonal-awards px-0">
+        <div class="seasonal-awards-header mx-common">
             <h3>Seasonal Awards</h3>
             <p>Top performers will be celebrated each season with awards such as:</p>
         </div>
-        <div class="seasonal-awards-content">
-                <div class="row mt-5">
-                    <div class="col-3">                        
-                        <div class="highest-season-points"></div>
-                        <p>Highest Season Points</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="consistent-team"></div>
-                        <p>Most Consistent Sales Team</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="best-closer"></div>
-                        <p>Best Closer</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="valuable-recruiter"></div>
-                        <p>Most Valuable Recruiter</p>
-                    </div>
+        <div class="seasonal-awards-content mx-common">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-6">                        
+                    <div class="highest-season-points"></div>
+                    <p>Highest Season Points</p>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <div class="predictor"></div>
-                        <p>Best Back Office Predictor</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="personal-bests"></div>
-                        <p>Most Personal Bests</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="records-broken"></div>
-                        <p>Company Records Broken</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="activity-level"></div>
-                        <p>Most No’s or highest activity level</p>
-                    </div>
+                <div class="col-lg-3 col-6">
+                    <div class="consistent-team"></div>
+                    <p>Most Consistent Sales Team</p>
                 </div>
+                <div class="col-lg-3 col-6">
+                    <div class="best-closer"></div>
+                    <p>Best Closer</p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="valuable-recruiter"></div>
+                    <p>Most Valuable Recruiter</p>
+                </div>
+            </div>
+            <div class="row mt-lg-5">
+                <div class="col-lg-3 col-6">
+                    <div class="predictor"></div>
+                    <p>Best Back Office Predictor</p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="personal-bests"></div>
+                    <p>Most Personal Bests</p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="records-broken"></div>
+                    <p>Company Records Broken</p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="activity-level"></div>
+                    <p>Most No’s or highest activity level</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- laegues explained -->
-    <div class="container-fluid leagues-explained">
-        <div class="container">
+    <div class="container-fluid leagues-explained px-0">
+        <div class="mx-common">
             <div class="leagues-explained-header">
                 <h2 class="text-center"><span class="text-1">leagues</span>&nbsp;<span class="text-2">explained</span></h2>
                 <div class="title-border-bottom"></div>
             </div>
-            <div class="container leagues-explained-content">
-                <div class="row">
+            <div class="container-fluid leagues-explained-content">
+                <div class="row leagues-carousel">
                     <div class="col-3 text-center leagues-explained-block">
                         <img src="./images/epic-seasons/level-1-base.svg" alt="">
-                        <p>Starter tier with branded gear and basic incentives.</p>
+                        <p>Starter league with branded gear and basic incentives.</p>
                         <div class="d-flex justify-content-around">
                             <div>
                                 <div class="d2d">D2D</div>
-                                <div class="points">40<span>pts.</span></div>
+                                <div class="points">50<span>pts.</span></div>
                             </div>
                             <div>
                                 <div class="mdu">MDU</div>
-                                <div class="points">140<span>pts.</span></div>
+                                <div class="points">150<span>pts.</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-3 text-center leagues-explained-block">
                         <img src="./images/epic-seasons/level-2-base.svg" alt="">
-                        <p>Mid-tier perks and accessories.</p>
+                        <p>Mid-league perks and accessories.</p>
                         <div class="d-flex justify-content-around">
                             <div>
                                 <div class="d2d">D2D</div>
-                                <div class="points">80<span>pts.</span></div>
+                                <div class="points">100<span>pts.</span></div>
                             </div>
                             <div>
                                 <div class="mdu">MDU</div>
-                                <div class="points">275<span>pts.</span></div>
+                                <div class="points">300<span>pts.</span></div>
                             </div>
                         </div>
                     </div>
@@ -201,11 +205,11 @@
                         <div class="d-flex justify-content-around">
                             <div>
                                 <div class="d2d">D2D</div>
-                                <div class="points">140<span>pts.</span></div>
+                                <div class="points">160<span>pts.</span></div>
                             </div>
                             <div>
                                 <div class="mdu">MDU</div>
-                                <div class="points">400<span>pts.</span></div>
+                                <div class="points">450<span>pts.</span></div>
                             </div>
                         </div>
                     </div>
@@ -215,11 +219,11 @@
                         <div class="d-flex justify-content-around">
                             <div>
                                 <div class="d2d">D2D</div>
-                                <div class="points">170<span>pts.</span></div>
+                                <div class="points">200<span>pts.</span></div>
                             </div>
                             <div>
                                 <div class="mdu">MDU</div>
-                                <div class="points">500<span>pts.</span></div>
+                                <div class="points">550<span>pts.</span></div>
                             </div>
                         </div>
                     </div>
@@ -229,30 +233,31 @@
     </div>
     <!-- points system -->
     <div class="container-fluid points-system">
-        <div class="container">
+        <div class="mx-common">
             <div class="row">
                 <div class="points-system-header text-center">
                     <h3><span>League</span> Points System</h3>
                     <p>Every sale and achievement contributes to your League Points, which are earned automatically for each sale and performance metric you achieve.</p>
                 </div>
-                <div class="col-6 px-1">
+                <div class="col-lg-6 col-12 mb-lg-0 mb-3">
                     <div class="points-system-content">
                         <h4>D2D Points Breakdown</h4>
                         <ul>
-                            <li>Fiber Orders: 1 point per order</li>
-                            <li>Non-Fiber Attachments Sold: 1 point per item</li>
-                            <li>Holiday Acceleration: 3 points per order</li>
-                            <li>Recruits Hired: 1 point per recruit's first 10 orders</li>
+                            <li>Fiber Orders → 1 Point per order</li>
+                            <li>Non-Fiber Attachments Sold → 1 Point per item</li>
+                            <li>Holiday Acceleration (Special Bonus) → 3 Points per order</li>
+                            <li>Recruits Hired (Earn points for onboarding new reps) → 1 Point per recruit’s first 10 orders</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 px-1">
+                <div class="col-lg-6 col-12">
                     <div class="points-system-content">
                         <h4>MDU Points Breakdown</h4>
                         <ul>
-                            <li>1GB+ Fiber Unit Orders: 3 points per order</li>
-                            <li> < 1GB Fiber Unit (incl copper) Orders: 1 point per order</li>
-                            <li>Non-Fiber Attachments Sold: 2 points per attachment</li>
+                            <li>1GB+ Fiber Orders → 3 Points per order</li>
+                            <li>500MB Fiber Orders (AT&T Only) → 2 Points per order</li>
+                            <li>< 1GB Fiber Orders (including all copper orders, excluding 500MB AT&T orders) → 1 Point per order</li>
+                            <li>Attachment Orders (TV, Wireless, AT&T Internet Air)→ 2 Points per order</li>
                         </ul>
                     </div>
                 </div>
@@ -261,22 +266,22 @@
     </div>
     <!-- Pro tip -->
     <div class="container-fluid pro-tip-container">
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="col-4 pro-tip-left text-center">
+        <div class="mx-common">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4 col-12 pro-tip-left text-center">
                     <img class="pro-tip-img" src="./images/epic-seasons/pro-tip.svg" />
                 </div>
-                <div class="col-8 pro-tip-right">
-                    <h2>BOOSTERS vs. League Points Clarification</h2>
+                <div class="col-lg-8 col-12 pro-tip-right mt-2 mt-lg-0">
+                    <h2>BOOSTERS vs. League Points <span>Clarification</span></h2>
                     <div class="pro-tip-right-content">
-                        <div class="d-flex align-items-center gap-5">
+                        <div class="d-flex align-items-center gap-lg-5 gap-3 ">
                             <div class="count">01</div>
                             <div>
                                 <h6>League Points</h6>
                                 <p>Intangible points used to qualify for rewards and tiers.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center gap-5">
+                        <div class="d-flex align-items-center gap-lg-5 gap-3">
                             <div class="count">02</div>
                             <div>
                                 <h6>Boosters</h6>
@@ -290,22 +295,22 @@
     </div>
     <!-- Choose your path to premier -->
     <div class="container-fluid to-permier-container">
-        <div class="container">
+        <div class="mx-common">
             <div class="row">
                 <div class="to-permier-header text-center">
                     <h3>Choose Your Path to <span>Premier</span></h3>
                     <p>Whether you're a top seller, a master recruiter, or someone who thrives on consistency, there's a path to success for you. Focus on what you do best and climb the tiers to unlock amazing rewards.</p>
                 </div>
                 <div class="row to-permier-block">
-                    <div class="col-4 to-permier-content">
+                    <div class="col-lg-4 col-12 to-permier-content">
                         <h4>Top Seller</h4>
                         <p>Maximize your commissions by focusing on product knowledge, closing deals, and offering exceptional service. Earn exclusive rewards as you climb the sales tiers.</p>
                     </div>
-                    <div class="col-4 to-permier-content">
+                    <div class="col-lg-4 col-12 to-permier-content">
                         <h4>Master Recruiter</h4>
                         <p>Build an incredible team by identifying talent, mentoring new reps, and growing your network. Watch your organization flourish and earn tiered bonuses.</p>
                     </div>
-                    <div class="col-4 to-permier-content">
+                    <div class="col-lg-4 col-12 to-permier-content">
                         <h4>Holiday Hustler</h4>
                         <p>Stay relentless during peak seasons and special promotions. Show up strong when it counts the most and climb the tiers through consistent effort and grit.</p>
                     </div>  
@@ -315,8 +320,8 @@
     </div>
     <!-- Area Managers -->
     <div class="container-fluid area-managers">
-        <div class="container">
-            <div class="row text-center">
+        <div class="mx-common">
+            <div class="row text-center" data-aos-duration="1000"  data-aos="fade-up">
                 <p class="line-1">Area Managers,</p>
                 <p class="line-2">You Get to #LevelUp Too!</p>
                 <p class="line-3">When your team smashes their seasonal quota, you rise with them—climbing one league higher, one step closer to greatness!</p>
@@ -363,10 +368,15 @@
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./libs/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./libs/aos-master/dist/aos.js"></script>
     <script src="./js/common.js" ></script>
     <script src="./js/epic-seasons.js"></script>
     <script>
         document.activePage = "epic"
+        AOS.init();
+        setTimeout(function() {
+            AOS.refresh();
+        }, 100);
     </script>
 </body>
 </html>
