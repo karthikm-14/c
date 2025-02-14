@@ -143,14 +143,14 @@ marquee {
     width: 80%;
 }
 .seasonal-reset-boosters .reset-img {
-    background-image: url("/images/epic-seasons/seasonal-reset.png");
+    background-image: url("../images/epic-seasons/seasonal-reset.png");
     display: block;
     width: 57px;
     height: 59px;
     background-repeat: no-repeat;
 }
 .seasonal-reset-boosters .boosters-img {
-    background-image: url("/images/epic-seasons/seasonal-boosters.png");
+    background-image: url("../images/epic-seasons/seasonal-boosters.png");
     display: block;
     width: 63px;
     height: 63px;
@@ -169,13 +169,13 @@ marquee {
     color: #233D4D;
 }
 .seasonal-reset-boosters .reset:hover .reset-img {
-    background-image: url("/images/epic-seasons/seasonal-reset-hover.png");
+    background-image: url("../images/epic-seasons/seasonal-reset-hover.png");
 }
 .seasonal-reset-boosters .boosters:hover .boosters-img {
-    background-image: url("/images/epic-seasons/seasonal-boosters-hover.png");
+    background-image: url("../images/epic-seasons/seasonal-boosters-hover.png");
 }
 .seasonal-awards {
-    background-image: url("/images/epic-seasons/seasonal-awards-bg.jpg");
+    background-image: url("../images/epic-seasons/seasonal-awards-bg.jpg");
     display: block;
     width: 100%;
     padding: 120px 0;
@@ -192,112 +192,112 @@ marquee {
     font-size: 28px;
 }
 .seasonal-awards .seasonal-awards-content .highest-season-points{
-    background-image: url("/images/epic-seasons/highest-season-points.png");
+    background-image: url("../images/epic-seasons/highest-season-points.png");
     width: 64px;
     height: 66px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .highest-season-points{
-    background-image: url("/images/epic-seasons/highest-season-points-hover.png");
+    background-image: url("../images/epic-seasons/highest-season-points-hover.png");
     width: 64px;
     height: 66px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .consistent-team{
-    background-image: url("/images/epic-seasons/consistent-team.png");
+    background-image: url("../images/epic-seasons/consistent-team.png");
     width: 80px;
     height: 64px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .consistent-team{
-    background-image: url("/images/epic-seasons/consistent-team-hover.png");
+    background-image: url("../images/epic-seasons/consistent-team-hover.png");
     width: 80px;
     height: 64px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .best-closer{
-    background-image: url("/images/epic-seasons/best-closer.png");
+    background-image: url("../images/epic-seasons/best-closer.png");
     width: 73px;
     height: 73px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .best-closer{
-    background-image: url("/images/epic-seasons/best-closer-hover.png");
+    background-image: url("../images/epic-seasons/best-closer-hover.png");
     width: 73px;
     height: 73px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .valuable-recruiter{
-    background-image: url("/images/epic-seasons/valuable-recruiter.png");
+    background-image: url("../images/epic-seasons/valuable-recruiter.png");
     width: 83px;
     height: 79px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .valuable-recruiter{
-    background-image: url("/images/epic-seasons/valuable-recruiter-hover.png");
+    background-image: url("../images/epic-seasons/valuable-recruiter-hover.png");
     width: 83px;
     height: 79px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .predictor{
-    background-image: url("/images/epic-seasons/predictor.png");
+    background-image: url("../images/epic-seasons/predictor.png");
     width: 73px;
     height: 76px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .predictor{
-    background-image: url("/images/epic-seasons/predictor-hover.png");
+    background-image: url("../images/epic-seasons/predictor-hover.png");
     width: 73px;
     height: 76px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .personal-bests{
-    background-image: url("/images/epic-seasons/personal-bests.png");
+    background-image: url("../images/epic-seasons/personal-bests.png");
     width: 65px;
     height: 64px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .personal-bests{
-    background-image: url("/images/epic-seasons/personal-bests-hover.png");
+    background-image: url("../images/epic-seasons/personal-bests-hover.png");
     width: 65px;
     height: 64px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .records-broken{
-    background-image: url("/images/epic-seasons/records-broken.png");
+    background-image: url("../images/epic-seasons/records-broken.png");
     width: 59px;
     height: 67px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .records-broken{
-    background-image: url("/images/epic-seasons/records-broken-hover.png");
+    background-image: url("../images/epic-seasons/records-broken-hover.png");
     width: 59px;
     height: 67px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards .seasonal-awards-content .activity-level{
-    background-image: url("/images/epic-seasons/activity-level.png");
+    background-image: url("../images/epic-seasons/activity-level.png");
     width: 56px;
     height: 77px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 .seasonal-awards:hover .activity-level{
-    background-image: url("/images/epic-seasons/activity-level-hover.png");
+    background-image: url("../images/epic-seasons/activity-level-hover.png");
     width: 56px;
     height: 77px;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ marquee {
 }
 .pro-tip-container .pro-tip-left {
     position: relative;
-    background: url("/images/epic-seasons/bulb.svg") no-repeat;
+    background: url("../images/epic-seasons/bulb.svg") no-repeat;
     background-position: center;
 }
 .to-permier-container {
