@@ -133,7 +133,7 @@
     font-size: 38px;
     line-height: 34px;
     text-transform: uppercase;
-    transition: all 0.2s ease-in;
+    transition: font-size 0.2s ease-in;
 }
 .champions-club-carousel-slider .qualify-container p {
     color: #151716;
@@ -407,12 +407,12 @@
     .champions-club-carousel-slider .qualify-container h6 {
         font-size: 20px;
         line-height: 24px;
-        transition: all 0.2s ease-in;
+        transition: font-size 0.2s ease-in;
     }
     .champions-club-carousel-slider .qualify-container:hover .qualify-desc h6 {
         font-size: 22px;
         line-height: 24px;
-        transition: all 0.2s ease-in;
+        transition: font-size 0.2s ease-in;
     }
     .champions-club-carousel-slider .qualify-container p {
         font-size: 16px;
