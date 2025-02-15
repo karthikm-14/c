@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chipr</title>
     <link href="./libs/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/champions-club.css">
 </head>
@@ -12,7 +14,7 @@
     <!-- Header -->
     <header id="header">
         <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
-            <div class="container-fluid align-items-end px-lg-5 px-xs-5">
+            <div class="container-fluid align-items-end px-lg-5 px-xs-5 bg-black">
                 <a class="navbar-brand" href="./"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,13 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase season" aria-current="page" href="./season-in-spotlight.html">Season in spotlight</a>
+                            <a class="nav-link text-uppercase season" href="./season-in-spotlight.html">Season in spotlight</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase epic" href="./epic-seasons.html">epic seasons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase champions" href="./champions-club.html">champions club</a>
+                            <a class="nav-link text-uppercase champions" aria-current="page" href="./champions-club.html">champions club</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase league" href="./league-swag.html">league swag</a>
@@ -46,8 +48,7 @@
     <!-- section hero -->
     <section class="top-slider">
         <div class="slider-images">
-            <img alt="Season in spotlight" class="w-100 slider-img-1" src="./images/champions-club/slider-1.svg" />
-            <div class="slider-logo">
+            <div class="slider-logo mx-common">
                 <img alt="Building" class="slider-img-2" src="./images/champions-club/slider-2.svg" />
                 <h3 class="change-text">Where Elite Performers Shine!</h3>
             </div>
@@ -69,15 +70,15 @@
     <!-- about -->
     <div class="container-fluid about-champions-league">
         <div class="justify-content-center">
-            <div class="container">
+            <div class="mx-common">
                 <div class="row">
-                    <div class="col-6 what-chipr p-4">
+                    <div class="col-lg-6 col-12 what-chipr ps-lg-5 pe-lg-4 mb-5 mb-lg-0">
                         <div class="about-champions-league-content">
                             <p>The <span>Champions Club</span> is the <span>highest honor</span> in Chipr League—reserved for the <span>top 10% of performers across all four seasons.</span></p>
                             <div class="border-white"></div>
                         </div>
                     </div>
-                    <div class="col-6 why-chipr p-4">
+                    <div class="col-lg-6 col-12 why-chipr ps-lg-4 pe-lg-5">
                         <div class="about-champions-league-content">
                             <p>It’s not just about one great season; it’s about <span>consistent excellence, drive, and elite performance year-round.</span></p>
                             <div class="border-white"></div>
@@ -85,51 +86,72 @@
                     </div>
                 </div>
             </div>
-            <div class="container champions-club-carousel">
-                <div class="champions-club-carousel-header">
+        </div>
+    </div> 
+    <!-- about -->
+    <div class="container-fluid how-to-qualify">
+        <div class="justify-content-center">
+            <div class="mx-common champions-club-carousel">
+                <div class="champions-club-carousel-header mb-5">
                     <h2 class="text-center"><span class="text-1">How to</span>&nbsp;<span class="text-2">Qualify</span></h2>
                     <div class="title-border-bottom"></div>
                 </div>
                 <div class="row champions-club-carousel-slider">
-                    <div class="carousel">
-                        <div class="qualify-1"><img src="./images/champions-club/qualify-1.svg" /></div>
-                        <div class="qualify-2"><img src="./images/champions-club/qualify-2.svg" /></div>
-                        <div class="qualify-3"><img src="./images/champions-club/qualify-3.svg" /></div>
+                    <div class="qualify-1 position-relative qualify-container">
+                        <div class="count">1</div>
+                        <div class="qualify-desc">
+                            <h6>Finish in the Top 10%</h6>
+                            <p>reps based on total League Points across all four seasons.</p>
+                        </div>
+                    </div>
+                    <div class="qualify-2 position-relative qualify-container">
+                        <div class="count">2</div>
+                        <div class="qualify-desc">
+                            <h6>Demonstrate consistency</h6>
+                            <p>sales performance, booster events, and streaks.</p>
+                        </div>
+                    </div>
+                    <div class="qualify-3 position-relative qualify-container">
+                        <div class="count">3</div>
+                        <div class="qualify-desc">
+                            <h6>Outperform in key competitions</h6>
+                            <p>like Boosters, Weekend Blitzes, and Seasonal Leaderboards.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div> 
     <!-- Exclusive Rewards -->
-    <div class="container exclusive-rewards">
+    <div class="mx-common exclusive-rewards">
         <div class="exclusive-rewards-header">
             <h2 class="text-center"><span class="text-1">Exclusive Rewards &</span></br><span class="text-2">Recognition</span></h2>
             <div class="title-border-bottom"></div>
         </div>
         <div class="row exclusive-rewards-slider">
             <div class="col-3">
-                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition1.svg" /></div>
+                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition1.jpg" /></div>
                 <div class="content-1">
                     <h6>All-Expenses-Paid Luxury Trip</h6>
                     <p>A destination retreat with other top performers.</p>
                 </div>
             </div>
             <div class="col-3">
-                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition2.svg" /></div>
+                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition2.jpg" /></div>
                 <div class="content-2">
                     <h6>Exclusive High-Value Gifts</h6>
                     <p>Tech gadgets, experiences, and elite swag.</p>
                 </div>
             </div>
             <div class="col-3">
-                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition3.svg" /></div>
+                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition3.jpg" /></div>
                 <div class="content-3">
                     <h6>VIP Access to the End-of-Year Champions Club Gala</h6>
                     <p>Celebrate your achievements in style.</p>
                 </div>
             </div>
             <div class="col-3">
-                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition4.svg" /></div>
+                <div class="top-img"><img class="w-100" src="/images/champions-club/recognition4.jpg" /></div>
                 <div class="content-4">
                     <h6>Company-Wide Recognition</h6>
                     <p>Featured in announcements, spotlights, and leadership events.</p>
@@ -139,27 +161,27 @@
     </div>
     <!-- Annual event -->
     <div class="container-fluid annual-event">
-        <div class="container ">
+        <div class="mx-common ">
             <div class="annual-event-header">
                 <h2 class="text-center"><span class="text-1">Champions Club</span></br><span class="text-2">Annual Event</span></h2>
                 <div class="title-border-bottom"></div>
             </div>
             <div class="sub-heading">Every year, the Champions Club Gala is held to recognize the top 10% of reps. Expect:</div>
             <div class="row annual-event-slider">
-                <div class="col-4 annual-event-content">
+                <div class="col-md-4 col-12 annual-event-content">
                     <div class="top-img"><img src="/images/champions-club/annual-event-1.svg" /></div>
                     <h6>A Premium Venue</h6>
                     <p>A high-class experience to celebrate elite achievements.</p>
                 </div>
-                <div class="col-4 annual-event-content">
+                <div class="col-md-4 col-12 annual-event-content">
                     <div class="top-img"><img src="/images/champions-club/annual-event-2.svg" /></div>
                     <h6>Exclusive Networking</h6>
                     <p>Meet and learn from top performers across the company.</p>
                 </div>
-                <div class="col-4 annual-event-content">
+                <div class="col-md-4 col-12 annual-event-content">
                     <div class="top-img"><img src="/images/champions-club/annual-event-3.svg" /></div>
                     <h6>Grand Award Ceremony</h6>
-                    <p>Receive your official Champions Club Trophy & Badge.</p>
+                    <p>Receive your official <span>Champions Club Trophy & Badge.</span></p>
                 </div>
             </div>
         </div>
@@ -167,15 +189,15 @@
     <!-- save spot -->
     <div class="container-fluid save-spot">
         <div class="row">
-            <div class="col-6 save-spot-left p-0">
-                <div class="save-spot-left-content">
+            <div class="col-lg-7 col-md-6 save-spot-left p-0">
+                <div class="save-spot-left-content mx-common">
                     <h6>Save Your Spot</h6>
                     <h5>Champions Club 2025 Event</h5>
                     <p>(in Spring 2026)</p>
                 </div>
             </div>
-            <div class="col-6 save-spot-right p-0">
-                <img class="w-100" src="/images/champions-club/save-spot.svg" />
+            <div class="col-lg-5 col-md-6 d-none d-md-block save-spot-right p-0">
+                <img class="w-100" src="/images/champions-club/save-spot.jpg" />
             </div>
         </div>
     </div>
@@ -218,7 +240,9 @@
     </footer>
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./libs/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./libs/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/common.js" ></script>
+    <script src="./js/champions-club.js" ></script>
     <script>
         document.activePage = "champions"
     </script>
