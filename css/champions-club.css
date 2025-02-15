@@ -411,7 +411,6 @@
     }
     .champions-club-carousel-slider .qualify-container:hover .qualify-desc h6 {
         font-size: 22px;
-        line-height: 24px;
         transition: font-size 0.2s ease-in;
     }
     .champions-club-carousel-slider .qualify-container p {
