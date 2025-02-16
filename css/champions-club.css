@@ -122,7 +122,7 @@
 .champions-club-carousel-slider .qualify-container .qualify-desc {
     background: #fff;
     padding: 50px 20px 50px 110px;
-    width: 100%;
+    width: calc(100% - 40px);
     position: relative;
     top: -60px;
     left: 40px;
@@ -153,7 +153,6 @@
 }
 .champions-club-carousel-slider .qualify-container.qualify-3 {
     margin-left: auto;
-    margin-right: 40px;
 }
 .champions-club-carousel-slider .qualify-container.qualify-3 .count {
     background: #233D4D;
@@ -394,24 +393,24 @@
     }
     .champions-club-carousel-slider .qualify-container .count {
         font-size: 24px;
-        padding: 10px 18px;
+        padding: 12px 18px;
         line-height: 20px;
+        box-shadow: 3px 3px 0px 3px #000;
     }
     .champions-club-carousel-slider .qualify-container .qualify-desc {
-        padding: 50px 10px 10px 10px;
-        width: 100%;
-        top: -30px;
-        left: 22px;
+        padding: 35px 15px 15px 15px;
+        width: calc(100% - 20px);
+        top: -21px;
+        left: 20px;
     }
     
     .champions-club-carousel-slider .qualify-container h6 {
         font-size: 20px;
         line-height: 24px;
-        transition: font-size 0.2s ease-in;
     }
     .champions-club-carousel-slider .qualify-container:hover .qualify-desc h6 {
-        font-size: 22px;
-        transition: font-size 0.2s ease-in;
+        font-size: 20px;
+        line-height: 24px;
     }
     .champions-club-carousel-slider .qualify-container p {
         font-size: 16px;
@@ -477,6 +476,10 @@
     .save-spot .save-spot-left p {
         font-size: 30px;
         margin-bottom: 0;
+    }
+    .save-spot {
+        padding-bottom: 50px;
+        background: #000;
     }
 }
 
@@ -575,6 +578,13 @@
     .exclusive-rewards-slider .content-2, 
     .exclusive-rewards-slider .content-4 {
         height: 250px;
+    }
+    .exclusive-rewards-slider {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .exclusive-rewards-slider > div:hover .top-img img {
+        scale: 1;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) { 

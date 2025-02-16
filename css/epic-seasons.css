@@ -4,7 +4,6 @@
     background-size: cover;
     height: calc(100vh - 205px);
     background-position: center;
-    filter: brightness(0.7);
     display: flex;
     align-items: center;
 }
@@ -623,11 +622,19 @@ marquee {
         font-size: 16px;
         line-height: 22px;
     }
-    .seasonal-awards .seasonal-awards-content .highest-season-points {
-        background-size: 80%;
+    .seasonal-awards .seasonal-awards-content .seasonal-icon {
+        background-size: contain;
+        height: 45px;
+        background-position: center;
     }
     .seasonal-awards-content .col-lg-3.col-6 {
         margin-bottom: 45px;
+    }
+    .seasonal-awards-content .col-lg-3.col-6:nth-child(odd) {
+        padding-right: 7px;
+    }
+    .seasonal-awards-content .col-lg-3.col-6:nth-child(even) {
+        padding-left: 7px;
     }
     .seasonal-awards .seasonal-awards-content p {
         font-size: 18px;
@@ -668,14 +675,24 @@ marquee {
         padding: 50px 0;
     }
     .pro-tip-container .pro-tip-left {
-        background-size: 15%;
+        background-size: 30%;
+        position: absolute;
+        left: -5px;
+        top: 5px;
+        width: 100px;
     }
     .pro-tip-container .pro-tip-left .pro-tip-img {
-        width: 50%;
+        width: 100%;
         max-width: 250px;
     }
     .pro-tip-container .pro-tip-right h2 {
-        font-size: 28px;
+        font-size: 25px;
+        margin-left: 85px;
+        margin-bottom: 25px;
+    }
+    .pro-tip-container .pro-tip-right-content > div {
+        margin-top: 10px;
+        align-items: start !important;
     }
     .pro-tip-container .pro-tip-right .count {
         font-size: 35px;
@@ -700,6 +717,7 @@ marquee {
         margin: 20px auto 25px;
         line-height: 28px;
         width: 100%;
+        text-align: left;
     }
     .to-permier-container .to-permier-block {
         margin-top: 20px;
@@ -708,17 +726,22 @@ marquee {
         margin-bottom: 20px;
     }
     .to-permier-container .to-permier-block .to-permier-content h4 {
-        font-size: 35px;
+        font-size: 22px;
+        width: 100%;
     }
     .to-permier-container .to-permier-block .to-permier-content:hover h4 {
         font-size: 22px;
+        width: 100%;
     }
     .to-permier-container .to-permier-block .to-permier-content p {
         font-size: 16px;
         width: 100%;
     }
+    .to-permier-container .to-permier-block .to-permier-content p:after {
+        background: none;
+    }
     .area-managers {
-        padding: 25px 0;
+        padding: 25px 0 50px;
     }
     .area-managers .line-1, 
     .area-managers .line-3 {
@@ -824,7 +847,6 @@ marquee {
         font-size: 46px;
     }
 }
-
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
  @media (max-width: 767.98px) { 
     .seasonal-reset-boosters .reset p, 
@@ -877,5 +899,4 @@ marquee {
     .leagues-explained-block .points {
         font-size: 24px;
     }
-
 }

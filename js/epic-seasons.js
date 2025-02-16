@@ -33,7 +33,7 @@ $(document).ready(function(){
     } 
 
     // Slider text animation
-    let words = ["Compete.", "Repeat.", "Win."];
+    let words = ["Compete.", "Win.", "Repeat."];
     let index = 0;
 
     setInterval(function(){

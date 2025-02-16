@@ -239,7 +239,8 @@ marquee {
         padding: 11px;
     }
     #footer > div {
-        height: 220px;
+        height: 105px;
+        padding-top: 50px;
     }
     .nut .nut-border {
         width: 39px;

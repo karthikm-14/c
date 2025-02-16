@@ -60,12 +60,6 @@
 .seasons-details .seasons-details-col .premier-league-content {
     padding: 30px 8%;
 }
-.seasons-details .seasons-details-col .season-detail-col:hover .base-league-content,
-.seasons-details .seasons-details-col .season-detail-col:hover  .advanced-league-content,
-.seasons-details .seasons-details-col .season-detail-col:hover  .pro-league-content,
-.seasons-details .seasons-details-col .season-detail-col:hover  .premier-league-content {
-    padding: 0;
-}
 .seasons-details .seasons-details-col h6 {
     font-family: "Bold";
     font-size: 33px;
@@ -94,9 +88,6 @@
 }
 .seasons-details-col .season-detail-col.premier-league {
     background: rgba(217, 217, 217, 0.25);
-}
-.seasons-details-col .season-detail-col:hover {
-    background: none;
 }
 .seasons-details-col .top-image {
     position: absolute;
@@ -156,31 +147,11 @@
 .seasons-details-col .season-detail-col .season-points .mdu {
     color: #F29DAA;
 }
-.seasons-details-col .season-detail-col:hover .season-detail-col-content .details,
-.seasons-details-col .season-detail-col .season-detail-col-content .hover-details {
-    display: none;
-}
-.seasons-details-col .season-detail-col:hover .season-detail-col-content .hover-details {
-    display: block;
-} 
-.seasons-details .seasons-details-col:hover .base-league-content:hover {
-    padding: 0;
-}
 .seasons-details-col .season-detail-col .season-detail-col-content .details .offers {
     height: 235px;
 }
-.seasons-details-col .season-detail-col:hover .top-image{
-    top: -160px;
-}
-.seasons-details-col .season-detail-col:hover .top-image img{
-    width: 160px;
-}
-.seasons-details-col .season-detail-col .hover-details .hover-text {
-    font-size: 33px;
-    line-height: 96%;
-    font-family: "Bold";
-    padding: 15% 9%;
-    text-transform: uppercase;
+.seasons-details-col .season-detail-col .season-detail-col-content .hover-details {
+    display: none;
 }
 /* certificate */
 .earn-certificate {
@@ -262,6 +233,14 @@
 /* applies to small devices (landscape phones, less than 768px) */
 /* applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .top-slider .slider-images .overlay {
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
     .top-slider .slider-text {
         font-size: 36px;
     }
@@ -273,18 +252,35 @@
     }
     .seasons-details-tabs .season-tab {
         height: 60px;
-        padding: 16px 16px;
+        padding: 10px;
         justify-content: center;
         flex: 48%;
     }
+    .seasons-details-tabs .season-tab:not(.active) {
+        border: none;
+        opacity: 0.5;
+    }
     .seasons-details-tabs .season-tab img {
         max-width: 75%;
+    }
+    .seasons-details-tabs .season-tab.active img {
+        max-width: 100%;
+    }
+    .seasons-details-tabs .season-tab.fall-tab img {
+        width: 50%;
     }
     .seasons-details-col .top-image {
         position: static;
     }
     .seasons-details-col .top-image img {
         margin: 0 auto;
+        width: 125px;
+    }
+    .seasons-details .seasons-details-col .base-league-content, 
+    .seasons-details .seasons-details-col .advanced-league-content, 
+    .seasons-details .seasons-details-col .pro-league-content, 
+    .seasons-details .seasons-details-col .premier-league-content {
+        padding: 15px 10px;
     }
     .seasons-details .seasons-details-col {
         max-width: 375px;
@@ -293,15 +289,46 @@
     .seasons-details .seasons-details-col .season-detail-col {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 18%, rgba(217, 217, 217, 0.1) 18%);
     }
-    .seasons-details-col .season-detail-col:hover {
-        background: none;
-    }
     .seasons-details .seasons-details-col h6 {
         margin: 0px auto 40px;
+        width: 76%;
     }
-    .earn-certificate .earn-certificate-content {
-        display: flex;
-        flex-wrap: wrap;
+    .seasons-details-col .season-detail-col .season-detail-col-content .details .offers {
+        height: 146px;
+    }   
+    .seasons-details-col .season-detail-col .cta-style {
+        min-height: auto;
+        font-size: 18px;
+        padding: 8px;
+        line-height: 18px;
+    } 
+    .earn-certificate {
+        padding: 0 0 50px;
+    }
+    .seasons-details-col .season-detail-col .season-points {
+        margin-top: 40px;
+    }
+    .seasons-details-col .season-detail-col .season-points .d2d, 
+    .seasons-details-col .season-detail-col .season-points .mdu {
+        font-size: 28px;
+    }
+    .seasons-details-col .season-detail-col .season-points div {
+        font-family: "Light";
+        font-size: 30px;
+        color: #fff;
+        line-height: 35px;
+    }
+    .earn-certificate .earn-certificate-content img {
+        width: 55px;
+    }
+    .earn-certificate .earn-certificate-content h4,
+    .earn-certificate .earn-certificate-content p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .visit-now {
+        padding-bottom: 50px;
+        background: #000;
     }
     .visit-now .visit-now-left {
         padding: 30px 0 !important;
@@ -387,5 +414,39 @@
     .seasons-details-col .season-detail-col .hover-details .hover-text {
         font-size: 28px;
         padding: 10% 2%;
+    }
+}
+@media (min-width: 992px) {
+    .seasons-details-col .season-detail-col:hover {
+        background: none;
+    }
+    .seasons-details .seasons-details-col .season-detail-col:hover .base-league-content,
+    .seasons-details .seasons-details-col .season-detail-col:hover  .advanced-league-content,
+    .seasons-details .seasons-details-col .season-detail-col:hover  .pro-league-content,
+    .seasons-details .seasons-details-col .season-detail-col:hover  .premier-league-content {
+        padding: 0;
+    }
+    .seasons-details-col .season-detail-col:hover .season-detail-col-content .details {
+        display: none;
+    }
+    .seasons-details-col .season-detail-col:hover .season-detail-col-content .hover-details {
+        display: block;
+    } 
+    .seasons-details .seasons-details-col:hover .base-league-content:hover {
+        padding: 0;
+    }
+
+    .seasons-details-col .season-detail-col:hover .top-image{
+        top: -160px;
+    }
+    .seasons-details-col .season-detail-col:hover .top-image img{
+        width: 160px;
+    }
+    .seasons-details-col .season-detail-col .hover-details .hover-text {
+        font-size: 33px;
+        line-height: 96%;
+        font-family: "Bold";
+        margin: 120px auto 40px;
+        text-transform: uppercase;
     }
 }

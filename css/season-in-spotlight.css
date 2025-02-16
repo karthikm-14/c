@@ -181,17 +181,14 @@ marquee {
     .top-slider .slider-text .hidden-text {
         font-size: 35px;
         line-height: 33px;
-        top: 50px;
-        z-index: -1;
+        top: 0;
         left: auto;
-        opacity: 0;
-        transition: all 500ms ease-in-out;
+        opacity: 1;
+        position: relative;
     }
     .top-slider:hover .slider-text .hidden-text {
         left: auto;
-        top: 140px;
-        opacity: 1;
-        transition: all 500ms ease-in;
+        top: 0;
     }
     /* march may */
     .march-may-text .month {
@@ -219,24 +216,28 @@ marquee {
         padding: 25px 0 !important;
     }
     .season-in-spotlight-info .description {
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .season-in-spotlight-info .description h3 {
         font-size: 25px;
         line-height: 88%;
     }
     .season-in-spotlight-info .description p {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 18px;
         margin-top: 15px;
     }
     .season-in-spotlight-info .col-12 {
         padding: 0;
     }
     /* gifts */
+    .gifts {
+        padding-bottom: 50px;
+        background: #000;
+    }
     .gifts .gift-details span {
-        font-size: 26px;
-        line-height: 130%;
+        font-size: 22px;
+        line-height: 110%;
     }
 }
 
@@ -296,9 +297,11 @@ marquee {
         left: -23px;
         position: relative;
     }
+    .top-slider .slider-text .hidden-text {
+        top: 0;
+    }
     .top-slider:hover .slider-text .hidden-text {
-        top: 100px;
-        transition: all 500ms ease-in;
+        top: 0;
     }
     .top-slider .slider-images .slider-text {
         top: calc(50% - 103px);
