@@ -1,14 +1,15 @@
 .top-slider .slider-images {
     position: relative;
-    min-height: 300px;
-}
-.top-slider .slider-images .slider-img-1 {
-    filter: brightness(0.7);
+    background: url("../images/the-forge/slider-1.jpg");
+    background-size: cover;
+    height: calc(100vh - 205px);
+    background-position: center;
+    display: flex;
+    align-items: center;
 }
 .top-slider .slider-logo {
-    position: absolute;
-    left: 0;
-    top: 30%;
+    position: relative;
+    left: -90px;
 }
 .top-slider .slider-logo h3 {
     font-family: "Black";
@@ -26,7 +27,7 @@ marquee {
 .new-hires {
     background-color: #000;
     color: #fff;
-    padding: 50px 0;
+    padding: 100px 0 50px;
 }
 .new-hires h3 {
     text-transform: uppercase;
@@ -34,11 +35,14 @@ marquee {
     font-size: 60px;
     width: 91%;
     line-height: 91%;
-    margin: 20px 0;
+    margin: 0 auto;
+}
+.new-hires-block .new-hire-logo img {
+    height: 77px;
 }
 .new-hires-block .new-hires-structured,
 .new-hires-block .new-hires-personal {
-    height: 457px;
+    height: 100%;
     font-family: "Bold";
     font-size: 50px;
     line-height: 52px;
@@ -56,8 +60,8 @@ marquee {
     justify-content: flex-end;
 }
 .new-hires-block p {
-    width: 63%;
-    margin: 5% auto;
+    width: 75%;
+    margin: 5% 10%;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -66,14 +70,15 @@ marquee {
 /* d2d */
 .d2d-explained {
     background-color: #000;
-    padding: 20px 100px 100px;
+    padding: 20px 100px 50px;
 }
 .container.d2d-explained-content {
     margin: 50px 0;
 }
 .d2d-explained .d2d-explained-header {
-    padding: 50px 0 30px;
+    padding: 0;
     position: relative;
+    margin-bottom: 50px;
 }
 .d2d-explained .d2d-explained-header h2 {
     font-family: "ExtraBold";
@@ -94,7 +99,7 @@ marquee {
     left: 0;
     right: 0;
     width: 100%;
-    bottom: 50px;
+    bottom: 50%;
     border-bottom: 1px solid #3AA7CB;
 }
 .d2d-explained .d2d-explained-header h2 .text-2 {
@@ -103,14 +108,18 @@ marquee {
 .d2d-explained .d2d-explained-content {
     position: relative;
 }
-.d2d-explained .d2d-explained-content .d2d-end-container {
-    content: "";
+.d2d-explained .d2d-explained-content .d2d-end-container .d2d-end { 
     position: absolute;
-    width: 157px;
     height: 151px;
-    bottom: -1%;
+    bottom: calc(0% - 32px);
     left: 50%;
     background-repeat: no-repeat;
+}
+.d2d-explained .d2d-explained-content .d2d-end-container .d2d-end-hover { 
+    position: absolute;
+    height: 151px;
+    bottom: calc(0% - 32px);
+    left: 50%;
 }
 .d2d-explained .d2d-explained-content .d2d-end-container:hover .d2d-end {
     display: none;
@@ -121,4 +130,147 @@ marquee {
 .d2d-explained .d2d-explained-content .d2d-end-hover {
     display: none;
     background: #555;
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .top-slider .slider-images {
+        background-position: 80%;
+        height: calc(100vh - 143px);
+        background-repeat: no-repeat;
+    }
+    .top-slider .slider-images .slider-img-2 {
+        width: 300px;
+    }
+    .top-slider .slider-logo {
+        left: -45px;
+    }
+    .top-slider .slider-logo h3 {
+        font-size: 34px;
+        width: 350px;
+        padding-left: 45px;
+    }
+    .new-hires h3 {
+        font-size: 24px;
+        width: 92%;
+        line-height: 100%;
+    }
+    .new-hires {
+        padding: 50px 0 50px;
+    }
+    .new-hires-block .new-hire-logo img {
+        height: 45px;
+    }
+    .new-hires-block .new-hires-structured,
+    .new-hires-block .new-hires-personal {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .new-hires-block .new-hires-personal {
+        margin-top: 20px;
+    }
+    .new-hires-block p {
+        width: 85%;
+        margin: 5%;
+    }
+    .d2d-explained {
+        background-color: #000;
+        padding: 0px 50px 50px;
+    }
+    .d2d-explained .d2d-explained-header h2 {
+        font-size: 30px;
+    }
+    .d2d-explained .d2d-explained-header {
+        margin-bottom: 30px;
+    }
+    .d2d-explained-content-md > div {
+        justify-content: center;
+    }
+    .d2d-explained-content-md .d2d-left,
+    .d2d-explained-content-md .d2d-right {
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        width: 100%;
+        padding: 15px 15px 15px 0px;
+        border-right: 1px solid #ffffff85;
+        position: relative;
+    }
+    .d2d-explained-content-md > div:first-child .d2d-left,
+    .d2d-explained-content-md > div:first-child .d2d-right {
+        padding-top: 0;
+        font-size: 20px;
+        font-family: 'Black';
+    }
+    .d2d-explained-content-md > div:last-child .d2d-left {
+        padding-bottom: 30px;
+    }
+    .d2d-explained-content-md > div:not(:first-child) .d2d-left:after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        right: -3px;
+        top: 20px;
+    }
+    .d2d-explained-content-md .d2d-right {
+        color: #F29DAA;
+        text-align: left;
+        border-right: none;
+        padding: 15px 0px 15px 15px;
+    }
+    .d2d-explained-content-md .d2d-left span,
+    .d2d-explained-content-md .d2d-right span {
+        width: 100%;
+        display: inline-block;
+    }
+    .d2d-hover-mobile {
+        text-align: center;
+    }
+    .d2d-hover-mobile img {
+        background: #151716;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+/* Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 992px) and (max-width: 1399.98px) { 
+    .top-slider .slider-images .slider-img-2 {
+        width: 70%;
+    }
+    .top-slider .slider-logo h3 {
+        font-size: 45px;
+    }
+    .new-hires h3 {
+        font-size: 50px;
+    }
+    .new-hires-block .new-hires-structured,
+    .new-hires-block .new-hires-personal {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .new-hires-block .new-hire-logo img {
+        height: 67px;
+    }
+    .d2d-explained .d2d-explained-header h2 {
+        font-size: 50px;
+    }
+    .d2d-explained .d2d-explained-content .d2d-end-container .d2d-end { 
+        position: absolute;
+        height: 100px;
+        bottom: calc(0% - 20px);
+        left: 50%;
+        background-repeat: no-repeat;
+    }
+    .d2d-explained .d2d-explained-content .d2d-end-container .d2d-end-hover { 
+        position: absolute;
+        height: 100px;
+        bottom: calc(0% - 20px);
+        left: 50%;
+    }
 }

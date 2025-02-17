@@ -13,18 +13,16 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid align-items-end px-5">
-                <a class="navbar-brand" href="./">
-                    <img src="./images/header/logo.svg" alt="Chipr" width="auto" height="85">
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+            <div class="container-fluid align-items-end px-lg-5 px-xs-5 bg-black">
+                <a class="navbar-brand" href="./"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase season" aria-current="page" href="./season-in-spotlight.html">Season in spotlight</a>
+                            <a class="nav-link text-uppercase season" href="./season-in-spotlight.html">Season in spotlight</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase epic" href="./epic-seasons.html">epic seasons</a>
@@ -36,7 +34,7 @@
                             <a class="nav-link text-uppercase league" href="./league-swag.html">league swag</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase forge" href="./the-forge.html">the forge</a>
+                            <a class="nav-link text-uppercase forge" aria-current="page"  href="./the-forge.html">the forge</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase faqs" href="./faqs.html">faqs</a>
@@ -50,9 +48,7 @@
     <!-- section hero -->
     <section class="top-slider">
         <div class="slider-images">
-            <img alt="Season in spotlight" class="slider-img-1 w-100" src="./images/the-forge/slider-1.svg" />
-            <div class="overlay-black"></div>
-            <div class="slider-logo">
+            <div class="slider-logo mx-common">
                 <img alt="Building" class="slider-img-2" src="./images/the-forge/slider-2.svg" />
                 <h3 class="change-text">Master Your Craft in 90 Days!</h3>
             </div>
@@ -73,23 +69,23 @@
     </marquee>
     <!-- Area Managers -->
     <div class="container-fluid new-hires">
-        <div class="container">
+        <div class="mx-common">
             <div class="row text-center">
                 <div class="new-hires-header text-center">
                     <h3>Helping new hires hit milestones faster and achieve early success.</h3>
                 </div>                    
             </div>
         </div>
-        <div class="row d-flex new-hires-block m-5">
-            <div class="col-6">
+        <div class="row mx-common d-flex new-hires-block m-5 mt-lg-5 mt-4 mb-lg-5 mb-4">
+            <div class="col-lg-6 col-12">
                 <div class="new-hires-structured p-3">
-                    <div class="new-hire-logo "><img src="/images/the-forge/structured-arrow.svg" /></div>
+                    <div class="new-hire-logo p-2 pb-0"><img src="/images/the-forge/structured-arrow.svg" /></div>
                     <p>A structured, 90-day player vs. self challenge.</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                 <div class="new-hires-personal p-3">
-                    <div class="new-hire-logo"><img src="/images/the-forge/achieve.svg" /></div>
+                    <div class="new-hire-logo p-2 pb-0"><img src="/images/the-forge/achieve.svg" /></div>
                     <p>Achieve personal milestones and unlock rewards with each step.</p>
                 </div>
             </div> 
@@ -101,12 +97,61 @@
             <h2 class="text-center"><span class="text-1">d2d</span>&nbsp;<span class="text-2"> & mdu</span></h2>
             <div class="title-border-bottom"></div>
         </div>
-        <div class="d-flex d2d-explained-content">
+        <div class="d-flex d2d-explained-content d-lg-block d-none">
             <img class="w-100" src="/images/the-forge/d2d.svg" />
             <div class="d2d-end-container">
                 <img class="d2d-end" src="/images/the-forge/d2d-end.svg" /> 
                 <img class="d2d-end-hover" src="/images/the-forge/d2d-end-hover.svg" />          
             </div>
+        </div>
+        <div class="d-lg-none">
+            <div class="d2d-explained-content-md">
+                <div class="d-flex">
+                    <div class="d2d-left text-uppercase"><span>D2d</span></div>
+                    <div class="d2d-right text-uppercase">MDu</div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Complete Training Certification</span></div>
+                    <div class="d2d-right"><span>Complete Training</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Shadow a sale</span></div>
+                    <div class="d2d-right"><span>Submit a solo fiber order</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Submit a solo fiber order</span></div>
+                    <div class="d2d-right"><span>Submit your third 1+GB plan</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Get 10 Interactions in one day</span></div>
+                    <div class="d2d-right"><span>Sign up your 10th referral partner</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Submit your third 1+GB plan</span></div>
+                    <div class="d2d-right"><span>Complete your 10th fiber order</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Sell an attachment</span></div>
+                    <div class="d2d-right"><span>Sell an attachment</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Submit 3+ orders in one day</span></div>
+                    <div class="d2d-right"><span>First Lunch and learn completed</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Complete your 10th fiber order</span></div>
+                    <div class="d2d-right"><span>First Event Completed</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Submit a recruiting referral</span></div>
+                    <div class="d2d-right"><span>Sell 3+ units in one day</span></div>
+                </div>
+                <div class="d-flex">
+                    <div class="d2d-left"><span>Submit 20+ orders in a month</span></div>
+                    <div class="d2d-right"><span>Submit 25+ orders in a month</span></div>
+                </div>
+            </div>
+            <div class="d2d-hover-mobile"><img src="./images/the-forge/d2d-hover-mobile.png" /></div>
         </div>
     </div>
     <!-- Footer -->
