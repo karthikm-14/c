@@ -46,8 +46,9 @@
     <!-- section hero -->
     <section class="top-slider">
         <div class="slider-images">
-            <img alt="Season in spotlight" class="w-100 slider-img-1" src="./images/faqs/slider-1.svg" />
-            <div class="slider-text">
+            <div class="overlay"></div>
+            <img alt="Season in spotlight" class="w-100 slider-img-1" src="./images/faqs/slider-1.jpg" />
+            <div class="slider-text mx-common">
                 <p class="text-1">HAVE MORE QUESTIONS?</p>
                 <p class="text-2">We've Got Answers!</p>
             </div>
@@ -68,8 +69,8 @@
     </marquee>
     <!-- questions block -->
     <div class="container-fluid questions-container">
-        <div class="container questions-container-block">
-            <div class="questions-header">
+        <div class="mx-common questions-container-block">
+            <div class="questions-header d-none d-lg-block">
                 <div class="text-center questions-header-block">
                     <h2 class="active" data-section="general-chipr-league">General Chipr League</h2>
                     <h2 data-section="d2d">Door-to-Door (D2D) Representatives</h2>
@@ -89,64 +90,70 @@
             <div class="question-individual-section-container">
                 <!-- general-chipr-league -->
                 <div class="questions-list active" id="general-chipr-league">
-                    <ul class="question-and-answer">
-                        <li class="col-3 question active">What is Chipr League?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer active"><span>Chipr League is your gateway to unparalleled success! It’s a dynamic incentive program that fuels your sales excellence with year-round rewards, structured seasons, and endless opportunities for career growth. Ready to level up? Chipr League is here to support your journey every step of the way.</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">Why should I join Chipr League?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Joining Chipr League means committing to your personal and professional growth. Stay motivated with clear goals, unlock exciting rewards, and climb the league to achieve elite recognition. It’s your chance to own each season and showcase your hustle!</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">How does Chipr League work?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Chipr League operates through themed seasons, each designed to keep your momentum strong. Earn League Points through sales and achievements, advance through league, and unlock amazing rewards. It’s a continuous cycle of growth, competition, and celebration!</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">Where can I find Chipr League resources and support?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>All resources are conveniently located in the Chipr League Experience Center on our internal company portal. From training materials to real-time dashboards, everything you need to succeed is just a click away. Need extra help? Reach out to your manager or our dedicated support team!</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">How often is the Chipr League program updated?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Chipr League is continuously evolving with new strategies, market insights, and feedback from our reps. Regular updates are implemented to ensure the program remains effective and relevant. Stay informed by checking the Experience Center regularly and attending our training sessions.</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">How can I provide feedback or suggestions for Chipr League?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Your insights are invaluable! Submit feedback through the feedback form on the company portal or share your ideas directly with your manager. Together, we can make Chipr League even better and tailor it to meet your needs.</span></li>
-                    </ul>
+                    <h2 class="d-lg-none active" data-section="general-chipr-league">General Chipr League</h2>
+                    <div class="question-and-answer-container">
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question active">What is Chipr League?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer active"><span>Chipr League is your gateway to unparalleled success! It’s a dynamic incentive program that fuels your sales excellence with year-round rewards, structured seasons, and endless opportunities for career growth. Ready to level up? Chipr League is here to support your journey every step of the way.</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">Why should I join Chipr League?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Joining Chipr League means committing to your personal and professional growth. Stay motivated with clear goals, unlock exciting rewards, and climb the league to achieve elite recognition. It’s your chance to own each season and showcase your hustle!</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">How does Chipr League work?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Chipr League operates through themed seasons, each designed to keep your momentum strong. Earn League Points through sales and achievements, advance through league, and unlock amazing rewards. It’s a continuous cycle of growth, competition, and celebration!</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">Where can I find Chipr League resources and support?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>All resources are conveniently located in the Chipr League Experience Center on our internal company portal. From training materials to real-time dashboards, everything you need to succeed is just a click away. Need extra help? Reach out to your manager or our dedicated support team!</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">How often is the Chipr League program updated?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Chipr League is continuously evolving with new strategies, market insights, and feedback from our reps. Regular updates are implemented to ensure the program remains effective and relevant. Stay informed by checking the Experience Center regularly and attending our training sessions.</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">How can I provide feedback or suggestions for Chipr League?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Your insights are invaluable! Submit feedback through the feedback form on the company portal or share your ideas directly with your manager. Together, we can make Chipr League even better and tailor it to meet your needs.</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- d2d -->
                 <div class="questions-list" id="d2d">
-                    <ul class="question-and-answer">
-                        <li class="col-3 question active">How can I maximize my League Points as a D2D rep?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer active"><span>Smash your sales targets by securing fiber orders and non-fiber attachments. Participate in Weekend Blitzes for bonus points, leverage Holiday Acceleration for triple points, and recruit new team members to boost your points even further. Every action counts towards your success!</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">What incentives are available for D2D reps?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Earn ChiprCoins with every sale, enjoy extra bonuses for consistent performance, and compete in Weekend Blitzes to boost your points. Top performers receive quarterly awards and exclusive league-specific rewards. Your dedication deserves the best rewards!</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">How do Blitzes work?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Blitzes are high-energy sales events held across a 5-10 day period. Achieve higher sales targets within these limited timeframes to earn significant League Points. It’s your chance to accelerate your progress and climb the leaderboard faster! If you’re interested in participating in a Blitz, talk to your manager.</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">What should I do if I encounter a difficult customer?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Stay calm and use the objection-handling techniques provided in the Chipr League training materials. Focus on understanding the customer's needs, address their concerns with confidence, and offer tailored solutions that highlight the value of our products. Don’t hesitate to seek advice from your manager or mentor if needed.</span></li>
-                    </ul>
-                    <ul class="question-and-answer">
-                        <li class="col-3 question">Can I leverage my network to maximize my League Points?</li>
-                        <li class="col-2 arrow"><img src="/images/faqs/arrow.svg"/></li>
-                        <li class="col-7 answer"><span>Absolutely! Building a strong network can lead to more referrals and sales opportunities. Engage with your contacts, share your success stories, and encourage referrals to earn additional League Points through their initial sales. Networking is a powerful tool for your growth!</span></li>
-                    </ul>
+                    <h2 class="d-lg-none" data-section="d2d">Door-to-Door (D2D) Representatives</h2>
+                    <div class="question-and-answer-container">
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">How can I maximize my League Points as a D2D rep?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Smash your sales targets by securing fiber orders and non-fiber attachments. Participate in Weekend Blitzes for bonus points, leverage Holiday Acceleration for triple points, and recruit new team members to boost your points even further. Every action counts towards your success!</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">What incentives are available for D2D reps?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Earn ChiprCoins with every sale, enjoy extra bonuses for consistent performance, and compete in Weekend Blitzes to boost your points. Top performers receive quarterly awards and exclusive league-specific rewards. Your dedication deserves the best rewards!</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">How do Blitzes work?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Blitzes are high-energy sales events held across a 5-10 day period. Achieve higher sales targets within these limited timeframes to earn significant League Points. It’s your chance to accelerate your progress and climb the leaderboard faster! If you’re interested in participating in a Blitz, talk to your manager.</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">What should I do if I encounter a difficult customer?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Stay calm and use the objection-handling techniques provided in the Chipr League training materials. Focus on understanding the customer's needs, address their concerns with confidence, and offer tailored solutions that highlight the value of our products. Don’t hesitate to seek advice from your manager or mentor if needed.</span></li>
+                        </ul>
+                        <ul class="question-and-answer">
+                            <li class="col-lg-3 col-12 question">Can I leverage my network to maximize my League Points?</li>
+                            <li class="col-lg-2 col-12 arrow d-none d-lg-block"><img src="/images/faqs/arrow.svg"/></li>
+                            <li class="col-lg-7 col-12 answer"><span>Absolutely! Building a strong network can lead to more referrals and sales opportunities. Engage with your contacts, share your success stories, and encourage referrals to earn additional League Points through their initial sales. Networking is a powerful tool for your growth!</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- mdu -->
                 <div class="questions-list" id="mdu">
@@ -444,21 +451,21 @@
 
     <!-- League spirit -->
     <div class="container-fluid league-spirit">
-        <div class="container">
+        <div class="mx-common">
             <div class="league-spirit-header">
                 <h2 class="text-center"><span class="text-1">Embrace the</span>&nbsp;<span class="text-2">Chipr League Spirit!</span></h2>
-                <div class="title-border-bottom"></div>
+                <div class="title-border-bottom d-lg-block d-none"></div>
             </div>
             <div class="sub-heading">Level Up your skills, Own the Season, and celebrate your journey to success! If you have any more questions or need personalized assistance, don’t hesitate to reach out. Let’s achieve greatness together!</div>
         </div>
     </div>
     <div class="container-fluid league-spirit league-help p-0">
-        <div class="container ">
+        <div class="mx-common ">
             <div class="league-spirit-header">
                 <h2 class="text-center"><span class="text-1">Need More</span>&nbsp;<span class="text-2">Help?</span></h2>
-                <div class="title-border-bottom"></div>
+                <div class="title-border-bottom d-lg-block d-none"></div>
             </div>
-            <div class="sub-heading">Got a question?<br>We’re here to assist! Click the "Write to Us" button below to reach out, and our team will get back to you as soon as possible.</div>
+            <div class="sub-heading">We’re here to assist!<br>Click on "Write to Us" to reach out and the team will get back to you.</div>
             <a class="mail-to btn-primary btn" href="mailto:league@chipr.com?subject=Have More Questions? We're Here to Help!">Write to Us</a>
         </div>
     </div>
