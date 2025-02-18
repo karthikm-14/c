@@ -46,8 +46,13 @@ marquee {
     font-family: "Bold";
     font-size: 50px;
     line-height: 52px;
+    scale: 1;
+    transition: scale 0.2s ease;
 }
-
+.new-hires-block .new-hires-structured:hover,
+.new-hires-block .new-hires-personal:hover {
+    scale: 1.05;
+}
 .new-hires-block .new-hires-structured {
     background-color: #3AA7CB;
 }

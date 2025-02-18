@@ -191,7 +191,7 @@
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
-    background: #fff;
+    background: #000;
     width: fit-content;
     margin: 0 auto;
     z-index: 1;
@@ -219,7 +219,7 @@
     transition: scale 0.2s ease-in-out;
 }
 .exclusive-rewards .exclusive-rewards-header h2 .text-1 {
-    color: #000;
+    color: #fff;
 }
 .exclusive-rewards .exclusive-rewards-header h2 .text-2 {
     color: #3AA7CB;

@@ -22,6 +22,7 @@
     height: 100%;
     left: 0;
     top: 0;
+    position: relative;
 }
 .slider-images .slider-image-1 {
     background: url(../images/home/slider1.jpg);
