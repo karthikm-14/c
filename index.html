@@ -13,7 +13,7 @@
     <!-- Header -->
     <header id="header">
         <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
-            <div class="container-fluid align-items-end px-lg-5 px-xs-5 bg-black">
+            <div class="container-fluid align-items-end px-lg-5 px-4 bg-black">
                 <a class="navbar-brand" href="./"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,29 +57,40 @@
                     </div>
                     <div class="col-4 slider-image-2 d-lg-none">
                         <img alt="clif hang" class="slider-img-2" src="./images/home/clifhang.jpg" />
-                        <div class="play-video"></div>
+                        <div class="play-video" data-bs-toggle="modal" data-bs-target="#video"></div>
                     </div>
                 </div>
             </div>
             <div class="col-4 slider-image-2 d-none d-lg-block">
                 <img alt="clif hang" class="slider-img-2" src="./images/home/clifhang.jpg" />
-                <div class="play-video"></div>
+                <div class="play-video" data-bs-toggle="modal" data-bs-target="#video"></div>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="video" tabindex="-1" aria-labelledby="videoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg video-popup">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/M_IpUgvJKqg?si=QC_7dzEPOtKATswb"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Marquee -->
-    <marquee width="100%" direction="left" height="100px">
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-        <span>#chiprleague</span><span> | </span><span>#levelup</span>
-    </marquee>
+    <div class="marquee-container">
+        <div class="marquee-content" height="100px">
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+            <span>#chiprleague</span><span> | </span><span>#levelup</span>
+        </div>
+    </div>
     <!-- about -->
     <div class="container-fluid about-chipr">
         <div class="justify-content-center">

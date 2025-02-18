@@ -73,6 +73,7 @@
 body {
     font-family: "Regular";
     font-size: 2vw; /* 2% of the viewport width */
+    background: #000;
 }
 #header nav {
     height: 112px;
@@ -87,6 +88,7 @@ body {
 }
 #navbarSupportedContent .navbar-nav {
     gap: 35px;
+    transition: all 200ms ease-in-out;
 }
 .navbar-brand {
     width: 90px;
@@ -178,7 +180,12 @@ header#header {
     position: relative;
 }
 
-marquee {
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
     background-color: #3AA8CC;
     font-family: "Black";
     font-size: 66px;
@@ -190,6 +197,26 @@ marquee {
     height: 95px;
     padding: 20px;
     display: block;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 15px; /* Adjust spacing */
+    min-width: 100%;
+    animation: marquee 8s linear infinite;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); } /* Moves only half so the second copy continues smoothly */
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .mx-common {
@@ -204,10 +231,62 @@ marquee {
 .pe-common {
     padding-right: 180px;
 }
+/* Modal */
+.modal-dialog .modal-content {
+    background: #000;
+}
+.modal-dialog .modal-header {
+    border: 0;
+}
+.modal-dialog .btn-close-custom {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.modal-dialog .btn-close-custom::before,
+.modal-dialog .btn-close-custom::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.modal-dialog .btn-close-custom::before {
+    transform: rotate(45deg);
+}
+.modal-dialog .btn-close-custom::after {
+    transform: rotate(-45deg);
+}
+.modal-dialog .modal-body iframe {
+    width: 100%;
+    height: 450px;
+}
 
 /* applies to small devices (landscape phones, less than 768px) */
 /* applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    #navbarSupportedContent .navbar-nav {
+        gap: 10px;
+    }
+    .navbar-collapse {
+        margin: 10px 5px 25px;
+    }
+    #header .nav-item .nav-link {
+        font-family: "Regular";
+        font-size: 16px;
+    }
+    #header .nav-item .nav-link.active {
+        font-family: "Medium";
+        font-size: 18px;
+    }
     .mx-common {
         margin: 0 50px;
     }
@@ -233,7 +312,7 @@ marquee {
     .top-slider .slider-images .overlay {
         padding: 25px 0;
     }
-    marquee {
+    .marquee-container {
         font-size: 46px;
         height: 63px;
         padding: 11px;
@@ -249,6 +328,10 @@ marquee {
     }
     .nut img {
         height: 27px;
+    }
+    .modal-dialog .modal-body iframe {
+        width: 100%;
+        height: 315px;
     }
 }
 
@@ -270,3 +353,20 @@ marquee {
         font-size: 12px;
     }
 }
+
+@media (min-width: 992px) {
+    /* Default navbar styling */
+    #header nav.shrink {
+        height: 92px;
+    }
+    .navbar {
+        transition: all 0.2s ease-in-out;
+    }
+    .navbar.shrink .navbar-brand {
+        scale: 0.9;
+    }
+    .navbar.shrink #navbarSupportedContent .navbar-nav {
+        gap: 30px;
+    }
+}
+    

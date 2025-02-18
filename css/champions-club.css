@@ -34,6 +34,9 @@
     text-transform: uppercase;
     height: 100%;
 }
+.about-champions-league .about-champions-league-content:hover {
+    background-color: #F29DAA;
+}
 .about-champions-league .about-champions-league-content span {
     color: #fff;
 }

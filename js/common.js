@@ -21,4 +21,13 @@ $(function(){
             $('.nav-item .faqs').addClass('active')
         }
     }, 100);
+
+    window.addEventListener('scroll', function() {
+        let navbar = document.querySelector('.navbar');
+        if (window.scrollY > 20) {
+            navbar.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+        }
+    });
 });

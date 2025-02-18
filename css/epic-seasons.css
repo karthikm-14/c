@@ -302,8 +302,13 @@ marquee {
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+.seasonal-awards .seasonal-awards-content .seasonal-icon {
+    background-size: contain;
+    height: 64px !important;
+    background-position: center;
+}
 .seasonal-awards .seasonal-awards-content p {
-    font-size: 33px;
+    font-size: 28px;
     line-height: 33px;
     width: 80%;
     margin: 30px auto;
@@ -448,6 +453,7 @@ marquee {
 /* protip */
 .pro-tip-container {
     padding: 100px 0;
+    background: #fff;
 }
 .pro-tip-container .pro-tip-right h2 {
     font-family: "Black";
