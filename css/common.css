@@ -77,6 +77,7 @@ body {
 }
 #header nav {
     height: 112px;
+    transition: all 300ms ease-in-out;
 }
 #header nav, #footer{
     background-color: #000 !important;
@@ -85,10 +86,11 @@ body {
     font-family: "Black";
     font-size: 17px;
     line-height: 135%;
+    transition: all 300ms ease-in-out;
 }
 #navbarSupportedContent .navbar-nav {
     gap: 35px;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 .navbar-brand {
     width: 90px;
@@ -96,12 +98,15 @@ body {
     background: url(../images/header/logo.svg) no-repeat;
     background-size: 100%;
     height: 69px;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 .navbar-brand:hover {
     background: url("../images/header/logo-hover.svg") no-repeat;
     background-size: 100%;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.navbar > .container-fluid {
+    transition: all 300ms ease-in-out;
 }
 #footer > div {
     padding-top: 150px;
@@ -317,6 +322,9 @@ header#header {
         height: 63px;
         padding: 11px;
     }
+    .marquee-content {
+        animation: marquee 2s linear infinite;
+    }
     #footer > div {
         height: 105px;
         padding-top: 50px;
@@ -349,15 +357,31 @@ header#header {
     .pe-common {
         padding-right: 60px;
     }
+    /* Default navbar styling */
+    #header nav.shrink {
+        height: 72px;
+    }
+    .navbar {
+        transition: all 0.2s ease-in-out;
+    }
+    .navbar.shrink .navbar-brand {
+        scale: 0.9;
+    }
+    .navbar #navbarSupportedContent .navbar-nav {
+        gap: 18px;
+    }
+    .navbar.shrink #navbarSupportedContent .navbar-nav {
+        gap: 16px;
+    }
     #header .nav-item .nav-link {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
     /* Default navbar styling */
     #header nav.shrink {
-        height: 92px;
+        height: 72px;
     }
     .navbar {
         transition: all 0.2s ease-in-out;
@@ -366,7 +390,11 @@ header#header {
         scale: 0.9;
     }
     .navbar.shrink #navbarSupportedContent .navbar-nav {
-        gap: 30px;
+        gap: 25px;
+    }
+    #header nav.shrink a.nav-link {
+        font-size: 16px;
+        padding: 10px;
     }
 }
     

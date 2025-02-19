@@ -84,7 +84,7 @@
 }
 .how-to-qualify {
     background: #000;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .champions-club-carousel .champions-club-carousel-header h2 .text-2 {
     color: #F29DAA;
@@ -180,6 +180,7 @@
 /* exclusive rewards */
 .exclusive-rewards {
     padding: 100px 0;
+    background: #fff;
 }
 .exclusive-rewards .exclusive-rewards-header {
     padding: 0;
@@ -191,7 +192,7 @@
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
-    background: #000;
+    background: #fff;
     width: fit-content;
     margin: 0 auto;
     z-index: 1;
@@ -214,12 +215,12 @@
     scale: 1;
     transition: scale 0.2s ease-in-out;
 }
-.exclusive-rewards-slider > div:hover .top-img img {
+.exclusive-rewards-slider .exclusive-slide:hover .top-img img {
     scale: 1.2;
     transition: scale 0.2s ease-in-out;
 }
 .exclusive-rewards .exclusive-rewards-header h2 .text-1 {
-    color: #fff;
+    color: #000;
 }
 .exclusive-rewards .exclusive-rewards-header h2 .text-2 {
     color: #3AA7CB;
@@ -242,6 +243,7 @@
     line-height: 113%;
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .exclusive-rewards-slider p {
     font-size: 22px;

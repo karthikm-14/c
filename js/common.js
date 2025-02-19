@@ -1,4 +1,19 @@
 $(function(){
+    // Goodle Analytics
+    let gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-123456";
+    $("head").append(gaScript);
+
+    let gaInit = document.createElement('script');
+    gaInit.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-123456');
+    `;
+    $("head").append(gaInit);
+
     // active page
     $('.nav-item .mav-link').removeClass('active')
     setTimeout(() => {
@@ -30,4 +45,9 @@ $(function(){
             navbar.classList.remove('shrink');
         }
     });
+
+    // Show hidden text
+    $('.top-slider').on('mouseenter', (event) => {
+        $(event.currentTarget).addClass('show-hidden-text')
+    })
 });

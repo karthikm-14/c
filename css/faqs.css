@@ -208,10 +208,19 @@
         font-family: "Medium";
         text-transform: uppercase;
         cursor: pointer;
-        width: 80%;
+        width: 100%;
+        position: relative;
+        z-index: 2;
     }
+    .question-individual-section-container .questions-list h2 span {
+        width: 80%;
+        display: block;
+    } 
     .question-individual-section-container .questions-list.mobile-active h2 {
         color: #F29DAA;
+    }
+    .question-individual-section-container .questions-list.mobile-active .toggle-questions-list {
+        z-index: 3;
     }
     .questions-list .question-and-answer-container:not(.mobile-active),
     .questions-list .question-and-answer.mobile-inactive {

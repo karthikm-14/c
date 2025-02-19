@@ -59,15 +59,14 @@
 .slider-images .slider-image-2 img {
     scale: 1;
     transition: scale 300ms ease-in-out;
+    cursor: pointer;
 }
 .slider-images .slider-image-2:hover img {
     scale: 1.1;
-    transition: scale 300ms ease-in-out;
 }
 .slider-images .slider-image-2:hover .play-video {
     width: 70px;
     height: 70px;
-    transition: all 300ms ease-in-out;
 }
 .about-chipr {
     padding: 100px 0;
@@ -176,6 +175,7 @@
     }
     .slider-image-1 .slider-image-2 {
         margin: 0 auto;
+        width: 275px;
     }
     /* about */
     .about-chipr {
