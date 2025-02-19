@@ -50,4 +50,11 @@ $(function(){
     $('.top-slider').on('mouseenter', (event) => {
         $(event.currentTarget).addClass('show-hidden-text')
     })
+
+    // scroll down on branner arrow click
+    $(".scroll-down-container").click(function(event) {
+        // event.preventDefault();
+        var x = $(this).offset().top;
+        $('html,body').animate({scrollTop: x }, 500);
+    });
 });

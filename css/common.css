@@ -108,13 +108,54 @@ body {
 .navbar > .container-fluid {
     transition: all 300ms ease-in-out;
 }
+.scroll-down-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    bottom: 20px;
+    cursor: pointer;
+}
+.scroll-down-arrow {
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #fff;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #fff;
+    right: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    margin-top: -10px;
+    transition: all 0.5s ease;
+}
+.scroll-down-arrow:nth-child(2) {
+    opacity: 0;
+}
+.scroll-down-container:hover .scroll-down-arrow {
+    margin-top: -5px;
+}
+.scroll-down-container:hover .scroll-down-arrow:first-child {
+    opacity: 0.5;
+}
+.scroll-down-container:hover .scroll-down-arrow:nth-child(2) {
+    opacity: 0.75;
+}
+.scroll-down-container:hover .scroll-down-arrow:nth-child(3) {
+    opacity: 1;
+}
 #footer > div {
-    padding-top: 150px;
-    height: 250px;
+    padding-top: 80px;
     background: #000;
 }
 #footer {
-    height: 100px;
+    padding-bottom: 20px;
 }
 .nav-link {
     color: #fff;
@@ -167,21 +208,80 @@ header#header {
     position: relative;
 }
 .nut img {
-    position: absolute;
-    height: 59px;
-    position: absolute;
     height: 59px;
     margin: 0 auto;
     text-align: center;
     left: 0;
     right: 0;
 }
+#footer:hover .nut1 img {
+    animation: nut1 0.5s ease forwards;
+}
+@keyframes nut1 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-40px); } /* Move up */
+    60% { transform: translateY(-20px); } /* Come back */
+    100% { transform: translateY(-30px); } /* Move up again */
+}
+#footer:hover .nut2 img {
+    animation: nut2 0.5s ease forwards;
+}
+@keyframes nut2 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-80px); } /* Move up */
+    60% { transform: translateY(-60px); } /* Come back */
+    100% { transform: translateY(-70px); } /* Move up again */
+}
+#footer:hover .nut3 img {
+    animation: nut3 0.5s ease forwards;
+}
+@keyframes nut3 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-120px); } /* Move up */
+    60% { transform: translateY(-80px); } /* Come back */
+    100% { transform: translateY(-90px); } /* Move up again */
+}
+#footer:hover .nut4 img {
+    animation: nut4 0.5s ease forwards;
+}
+@keyframes nut4 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-70px); } /* Move up */
+    60% { transform: translateY(-50px); } /* Come back */
+    100% { transform: translateY(-60px); } /* Move up again */
+}
+#footer:hover .nut5 img {
+    animation: nut5 0.5s ease forwards;
+}
+@keyframes nut5 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-20px); } /* Move up */
+    60% { transform: translateY(-10px); } /* Come back */
+    100% { transform: translateY(-5px); } /* Move up again */
+}
+#footer:hover .nut6 img {
+    animation: nut6 0.5s ease forwards;
+}
+@keyframes nut6 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-30px); } /* Move up */
+    60% { transform: translateY(-20px); } /* Come back */
+    100% { transform: translateY(-30px); } /* Move up again */
+}
+#footer:hover .nut7 img {
+    animation: nut7 0.5s ease forwards;
+}
+@keyframes nut7 {
+    0% { transform: translateY(0); } /* Start */
+    30% { transform: translateY(-50px); } /* Move up */
+    60% { transform: translateY(-40px); } /* Come back */
+    100% { transform: translateY(-50px); } /* Move up again */
+}
 .nut .nut-border {
     width: 87px;
     height: 25px;
     display: block;
     margin-top: 8px;
-    top: 60px;
     position: relative;
 }
 
@@ -236,6 +336,10 @@ header#header {
 .pe-common {
     padding-right: 180px;
 }
+.pxe-common {
+    padding-bottom: 100px !important;
+}
+
 /* Modal */
 .modal-dialog .modal-content {
     background: #000;
@@ -304,6 +408,9 @@ header#header {
     .pe-common {
         padding-right: 50px;
     }
+    .pxe-common {
+        padding-bottom: 50px !important;
+    }
     .navbar-brand {
         width: 48px;
         height: 37px;
@@ -325,17 +432,60 @@ header#header {
     .marquee-content {
         animation: marquee 2s linear infinite;
     }
+    #footer {
+        padding-bottom: 10px;
+    }
     #footer > div {
-        height: 105px;
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .nut .nut-border {
         width: 39px;
         height: 11px;
-        top: 30px;
     }
     .nut img {
         height: 27px;
+    }
+    @keyframes nut1 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut2 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut3 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut4 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut5 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut6 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
+    }
+    @keyframes nut7 {
+        0% { transform: translateY(0); } /* Start */
+        30% { transform: translateY(0); } /* Move up */
+        60% { transform: translateY(0); } /* Come back */
+        100% { transform: translateY(0); } /* Move up again */
     }
     .modal-dialog .modal-body iframe {
         width: 100%;

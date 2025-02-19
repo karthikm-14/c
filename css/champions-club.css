@@ -108,6 +108,7 @@
 } */
 .champions-club-carousel-slider .qualify-container {
     width: 55%;
+    margin-top: 50px;
 }
 .champions-club-carousel-slider .qualify-container .count {
     background: #3AA7CB;
@@ -115,19 +116,33 @@
     font-size: 76px;
     -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: transparent;
-    padding: 20px 40px;
-    line-height: 64px;
+    line-height: 60px;
     box-shadow: 5px 5px 0px 5px #000;
-    width: max-content;
     z-index: 2;
-    position: relative;
+    position: absolute;
+    width: 117px;
+    top: -40px;
+    left: 0px;
+    height: 96px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.champions-club-carousel-slider .qualify-container:hover .count  {
+    left: 51px;
+    height: 60px;
+    font-size: 29px;
+    top: 0px;
+    width: 60px;
+    box-shadow: 4px 4px 0px 4px #000;
 }
 .champions-club-carousel-slider .qualify-container .qualify-desc {
     background: #fff;
     padding: 50px 20px 50px 110px;
     width: calc(100% - 40px);
     position: relative;
-    top: -60px;
     left: 40px;
 }
 .champions-club-carousel-slider .qualify-container h6 {
@@ -147,6 +162,7 @@
 }
 .champions-club-carousel-slider .qualify-container.qualify-2 {
     margin: 0 auto;
+    margin-top: 100px;
 }
 .champions-club-carousel-slider .qualify-container.qualify-2 .count {
     background: #F29DAA;
@@ -156,6 +172,7 @@
 }
 .champions-club-carousel-slider .qualify-container.qualify-3 {
     margin-left: auto;
+    margin-top: 100px;
 }
 .champions-club-carousel-slider .qualify-container.qualify-3 .count {
     background: #233D4D;
@@ -401,6 +418,16 @@
         padding: 12px 18px;
         line-height: 20px;
         box-shadow: 3px 3px 0px 3px #000;
+        width: 60px;
+        height: 48px;
+    }
+    .champions-club-carousel-slider .qualify-container:hover .count {
+        font-size: 24px;
+        width: 60px;
+        height: 48px;
+        box-shadow: 3px 3px 0px 3px #000;
+        left: 0;
+        top: -40px;
     }
     .champions-club-carousel-slider .qualify-container .qualify-desc {
         padding: 35px 15px 15px 15px;
@@ -408,7 +435,6 @@
         top: -21px;
         left: 20px;
     }
-    
     .champions-club-carousel-slider .qualify-container h6 {
         font-size: 20px;
         line-height: 24px;
@@ -578,6 +604,7 @@
     }
     .champions-club-carousel-slider .qualify-container {
         width: 100%;
+        margin-top: 50px !important;
     }
     .exclusive-rewards-slider .content-1, 
     .exclusive-rewards-slider .content-3,
