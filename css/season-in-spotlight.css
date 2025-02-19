@@ -115,6 +115,7 @@ marquee {
     font-size: 50px;
     text-transform: uppercase;
     width: 75%;
+    line-height: 100%;
 }
 .season-in-spotlight-info .description h3:hover {
     color: #233D4D;
@@ -186,7 +187,7 @@ marquee {
         opacity: 1;
         position: relative;
     }
-    .top-slider:hover .slider-text .hidden-text {
+    .top-slider.show-hidden-text .slider-text .hidden-text {
         left: auto;
         top: 0;
     }
@@ -256,7 +257,7 @@ marquee {
         line-height: 50px;
         top: 32px;
     }
-    .top-slider:hover .slider-text .hidden-text {
+    .top-slider.show-hidden-text .slider-text .hidden-text {
         left: 78%;
     }
     /* march may month */
