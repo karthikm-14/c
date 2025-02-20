@@ -59,11 +59,18 @@ $(function(){
     });
 });
 
-// Debounce function to prevent multiple reloads
-let resizeTimer;
-window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-        location.reload();  // Refresh page after resizing stops
-    }, 500);  // Wait 500ms before refreshing
+let resizeTimeout;
+let lastWidth = window.innerWidth;
+let lastHeight = window.innerHeight;
+
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        // Ignore resize if in fullscreen mode
+        if (!document.fullscreenElement && (window.innerWidth !== lastWidth || window.innerHeight !== lastHeight)) {
+            lastWidth = window.innerWidth;
+            lastHeight = window.innerHeight;
+            location.reload();
+        }
+    }, 500); // Adjust debounce time if needed
 });
