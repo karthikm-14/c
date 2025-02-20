@@ -2,7 +2,7 @@ $(function(){
     // Goodle Analytics
     let gaScript = document.createElement('script');
     gaScript.async = true;
-    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-123456";
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-447224583";
     $("head").append(gaScript);
 
     let gaInit = document.createElement('script');
@@ -10,7 +10,7 @@ $(function(){
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-123456');
+    gtag('config', 'G-447224583');
     `;
     $("head").append(gaInit);
 
@@ -57,4 +57,13 @@ $(function(){
         var x = $(this).offset().top;
         $('html,body').animate({scrollTop: x }, 500);
     });
+});
+
+// Debounce function to prevent multiple reloads
+let resizeTimer;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        location.reload();  // Refresh page after resizing stops
+    }, 500);  // Wait 500ms before refreshing
 });
