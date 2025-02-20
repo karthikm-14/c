@@ -125,6 +125,7 @@ marquee {
     height: 151px;
     bottom: calc(0% - 32px);
     left: 50%;
+    padding: 0 10px 10px 10px;
 }
 .d2d-explained .d2d-explained-content .d2d-end-container:hover .d2d-end {
     display: none;
