@@ -61,15 +61,13 @@ $(function(){
 
 let resizeTimeout;
 let lastWidth = window.innerWidth;
-let lastHeight = window.innerHeight;
 
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
         // Ignore resize if in fullscreen mode
-        if (!document.fullscreenElement && (window.innerWidth !== lastWidth || window.innerHeight !== lastHeight)) {
+        if (!document.fullscreenElement && window.innerWidth !== lastWidth) {
             lastWidth = window.innerWidth;
-            lastHeight = window.innerHeight;
             location.reload();
         }
     }, 500); // Adjust debounce time if needed
