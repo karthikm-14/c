@@ -644,4 +644,7 @@
         font-size: 33px;
         line-height: 38px;
     }
+    .save-spot .save-spot-left .save-spot-left-content {
+        padding: 12px 0;
+    }
 }

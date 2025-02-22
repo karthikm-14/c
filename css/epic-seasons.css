@@ -695,6 +695,7 @@ marquee {
         font-size: 25px;
         margin-left: 85px;
         margin-bottom: 25px;
+        min-height: 53px;
     }
     .pro-tip-container .pro-tip-right-content > div {
         margin-top: 10px;
