@@ -6,12 +6,14 @@
     <title>League swag</title>
     <meta name="description"
         content="We’re a direct-to-consumer organization specializing in door-to-door sales jobs. We partner with some of America’s top tech brands.">
-    <link href="./libs/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preload" onload="this.rel='stylesheet'" as="style" href="./libs/slick-1.8.1/slick/slick.css"/>
+    <link rel="preload" onload="this.rel='stylesheet'" as="style" href="./libs/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/common.min.css">
     <link rel="stylesheet" href="./css/league-swag.css">
     <link rel="icon" type="image/x-icon" href="./images/header/favicon.ico">
+    <link rel="preload" as="image" href="./images/league-swag/slider1.avif" />
+    <link rel="preload" as="image" href="./images/league-swag/slider1-mobile.avif" />
 </head>
 <body>
     <!-- Header -->
@@ -52,8 +54,8 @@
     <section class="top-slider">
         <div class="slider-images">
             <div class="overlay"></div>
-            <img alt="Season in spotlight" class="w-100 slider-img-1 d-none d-lg-block" src="./images/league-swag/slider1.jpg" />
-            <img alt="Season in spotlight" class="w-100 slider-img-1 d-lg-none" src="./images/league-swag/slider1-mobile.jpg" />
+            <img loading="lazy" alt="Season in spotlight" class="w-100 slider-img-1 d-none d-lg-block" src="./images/league-swag/slider1.avif" />
+            <img loading="lazy" alt="Season in spotlight" class="w-100 slider-img-1 d-lg-none" src="./images/league-swag/slider1-mobile.avif" />
             <div class="slider-text mx-common">
                 <p class="text-1">Earn the Swag,</p>
                 <p class="text-2">Flaunt Your Success!</p>
@@ -85,17 +87,17 @@
     <div class="container-fluid league-swag-seasons">
         <div class="seasons-details mx-common">
             <div class="seasons-details-tabs text-center">
-                <div class="season-tab spring-tab active"><img src="./images/league-swag/spring-tab.svg" /></div>
-                <div class="season-tab summer-tab"><img src="./images/league-swag/summer-tab.svg" /></div>
-                <div class="season-tab fall-tab"><img src="./images/league-swag/fall-tab.svg" /></div>
-                <div class="season-tab winter-tab"><img src="./images/league-swag/winter-tab.svg" /></div>
+                <div class="season-tab spring-tab active"><img alt="Sprint" loading="lazy" src="./images/league-swag/spring-tab.svg" /></div>
+                <div class="season-tab summer-tab"><img alt="Summer" loading="lazy" src="./images/league-swag/summer-tab.svg" /></div>
+                <div class="season-tab fall-tab"><img alt="Fall" loading="lazy" src="./images/league-swag/fall-tab.svg" /></div>
+                <div class="season-tab winter-tab"><img alt="Winter" loading="lazy" src="./images/league-swag/winter-tab.svg" /></div>
             </div>
             <div class="row seasons-details-col league-swag-seasons-carousel">
                 <div class="text-center col-3">
                     <div class="season-detail-col base-league">
                         <div class="season-detail-col-content">
                             <div class="top-image">
-                                <img  src="./images/league-swag/base-league.svg" alt="">
+                                <img alt="Bast League"  loading="lazy" src="./images/league-swag/base-league.svg" >
                             </div>
                             <div class="base-league-content">
                                 <div class="league-top-container">
@@ -113,12 +115,12 @@
                                         </div>
                                     </div>
                                     <div class="hover-details p-3">
-                                        <div class=""><img class="w-100" src="./images/league-swag/hat-small.jpg" alt=""></div>
+                                        <div class=""><img alt="Hat" loading="lazy" class="w-100" src="./images/league-swag/hat-small.jpg" ></div>
                                         <div class="row px-2">
-                                            <img class="col-6 p-1" src="./images/league-swag/tshirt-small.jpg" alt="">
-                                            <img class="col-6 p-1" src="./images/league-swag/jacket-small.jpg" alt="">
+                                            <img alt="T-shirt" loading="lazy" class="col-6 p-1" src="./images/league-swag/tshirt-small.jpg" >
+                                            <img alt="Jacket" loading="lazy" class="col-6 p-1" src="./images/league-swag/jacket-small.jpg" >
                                         </div>
-                                        <div class=""><img class="w-100" src="./images/league-swag/coupon-small.jpg" alt=""></div>
+                                        <div class=""><img alt="Coupon" loading="lazy" class="w-100" src="./images/league-swag/coupon-small.jpg"></div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-around season-points">
@@ -139,14 +141,14 @@
                     <div class="season-detail-col advanced-league">
                         <div class="season-detail-col-content">
                             <div class="top-image">
-                                <img src="./images/league-swag/advanced-league.svg" alt="">
+                                <img alt="Advanced league" loading="lazy" src="./images/league-swag/advanced-league.svg" >
                             </div>
                             <div class="advanced-league-content">
                                 <div class="league-top-container">
                                     <div class="hover-details p-3">
                                         <div class="hover-text">Base Prize Pack +</div>
-                                        <div class="p-1"><img class="w-100" src="./images/league-swag/shoe-small.jpg" alt=""></div>
-                                        <div class="p-1"><img class="w-100" src="./images/league-swag/coupon-small.jpg" alt=""></div>
+                                        <div class="p-1"><img alt="Shoe" loading="lazy" class="w-100" src="./images/league-swag/shoe-small.jpg" ></div>
+                                        <div class="p-1"><img alt="Coupon" loading="lazy" class="w-100" src="./images/league-swag/coupon-small.jpg"></div>
                                     </div>
                                     <div class="details">
                                         <h6>Advanced Prize Pack</h6>
@@ -177,14 +179,14 @@
                     <div class="season-detail-col pro-league">
                         <div class="season-detail-col-content">
                             <div class="top-image" >
-                                <img src="./images/league-swag/pro-league.svg" alt="">
+                                <img alt="Pro league" loading="lazy" src="./images/league-swag/pro-league.svg" >
                             </div>
                             <div class="pro-league-content">
                                 <div class="league-top-container">
                                     <div class="hover-details p-3">
                                         <div class="hover-text">Base + ADVANCE Prize Pack +</div>
-                                        <div class="p-1"><img class="w-100" src="./images/league-swag/bagpack-small.jpg" alt=""></div>
-                                        <div class="p-1"><img class="w-100" src="./images/league-swag/id-small.jpg" alt=""></div>
+                                        <div class="p-1"><img alt="BagPack" loading="lazy" class="w-100" src="./images/league-swag/bagpack-small.jpg" ></div>
+                                        <div class="p-1"><img alt="ID" loading="lazy" class="w-100" src="./images/league-swag/id-small.jpg"></div>
                                     </div>
                                     <div class="details">
                                         <h6>Pro Prize Pack</h6>
@@ -215,13 +217,13 @@
                     <div class="season-detail-col premier-league">
                         <div class="season-detail-col-content">
                             <div class="top-image">
-                                <img src="./images/league-swag/premier-league.svg" alt="">
+                                <img alt="Premier league" loading="lazy" src="./images/league-swag/premier-league.svg" />
                             </div>
                             <div class="premier-league-content">
                                 <div class="league-top-container">
                                     <div class="hover-details p-3">
                                         <div class="hover-text">Base + ADVANCE + PRO Prize Pack +</div>
-                                        <div class="p-1"><img class="w-100" src="./images/league-swag/flight-small.jpg" alt=""></div>
+                                        <div class="p-1"><img alt="Flight" loading="lazy" class="w-100" src="./images/league-swag/flight-small.jpg" ></div>
                                     </div>
                                     <div class="details">
                                         <h6>Premier Prize Pack</h6>
@@ -254,7 +256,7 @@
     <!-- Certificate -->
     <div class="container-fluid earn-certificate">
         <div class="d-flex earn-certificate-content align-items-center mx-common">
-            <img src="./images/league-swag/certificate.svg" />
+            <img alt="Certificate" loading="lazy" src="./images/league-swag/certificate.svg" />
             <div>
                 <h4>Achieve greatness and earn your</h4>
                 <p>Season 1 Certificate!</p>
@@ -265,7 +267,7 @@
     <div class="container-fluid pxe-common">
         <div class="row d-flex align-items-center visit-now py-5">
             <div class="col-12 d-lg-none visit-now-right p-0 mx-common">
-                <img class="w-50" src="./images/league-swag/store.png" />
+                <img alt="Store" loading="lazy" class="w-50" src="./images/league-swag/store.avif" />
             </div>
             <div class="col-12 col-lg-7 visit-now-left p-0">
                 <div class="visit-now-left-content mx-common me-5">
@@ -276,7 +278,7 @@
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block visit-now-right p-0 text-center">
-                <img class="w-75" src="./images/league-swag/store.png" />
+                <img alt="Store" loading="lazy" class="w-75" src="./images/league-swag/store.avif" />
             </div>
         </div>
     </div>
@@ -284,46 +286,46 @@
     <footer id="footer">
         <div class="d-flex justify-content-center text-center gap-2">
             <div class="nut nut1 nut-white">
-                <img src="./images/footer/nut-white.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-white.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut2 nut-cream">
-                <img src="./images/footer/nut-cream.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-cream.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut3 nut-blue">
-                <img src="./images/footer/nut-blue.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-blue.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut4 nut-green">
-                <img src="./images/footer/nut-green.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-green.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut5 nut-yellow">
-                <img src="./images/footer/nut-yellow.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-yellow.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut6 nut-brown">
-                <img src="./images/footer/nut-brown.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-brown.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut7 nut-orange">
-                <img src="./images/footer/nut-orange.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-orange.png" />
                 <span class="nut-border"></span>
             </div>
             <div class="nut nut8 nut-white-2">
-                <img src="./images/footer/nut-white.png" />
+                <img width="49" height="60" loading="lazy" alt="nut" src="./images/footer/nut-white.png" />
                 <span class="nut-border"></span>
             </div>
         </div>
     </footer>
-    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="./libs/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script defer src="./js/common.js" ></script>
+    <script defer src="./js/league-swag.js" ></script>
     <script>
         document.activePage = "league"
     </script>
-    <script src="./js/common.js" ></script>
-    <script src="./js/league-swag.js" ></script>
 </body>
 </html>

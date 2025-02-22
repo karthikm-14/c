@@ -1,6 +1,6 @@
 .top-slider .slider-images {
     position: relative;
-    background: url("../images/the-forge/slider-1.jpg");
+    background: url("../images/the-forge/slider-1.avif");
     background-size: cover;
     height: calc(100vh - 205px);
     background-position: center;

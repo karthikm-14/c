@@ -1,6 +1,6 @@
 .top-slider .slider-images {
     position: relative;
-    background: url("../images/season-in-spotlight/slider.jpg");
+    background: url("../images/season-in-spotlight/slider.avif");
     background-size: cover;
     height: calc(100vh - 205px);
     background-position: center;
